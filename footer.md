@@ -1,1 +1,1 @@
-reqT at Github: https://github.com/reqT/reqT
+[github.com/reqT](https://github.com/reqT)
