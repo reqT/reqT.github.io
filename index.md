@@ -1,9 +1,3 @@
-<img src="https://github.com/reqT/reqT/blob/4.x/logo/reqT.jpg?raw=true" width="100"> 
-
-# reqT - requirements tool
-
-**reqT** is an **open source requirements engineering tool** for **software developers** based on **reqT-lang** using **common requirements engineering concepts**
-
 ## Resources
 
 * [Download app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) 
@@ -33,7 +27,7 @@ val res0: reqt.Model =
   Model(Rel(Ent(Feature,helloWorld),Has,Model(StrAttr(Spec,print greeting))))
 scala> 
 ```
-* You can also use reqT as a library in Scala programs. Example: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala) 
+* You can also use reqT as a library in Scala programs and run with `scala run hello-reqt.scala` after downloading example: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala) 
 
 ```scala
 //> using scala 3.6.2
@@ -47,3 +41,7 @@ val m = Model(
 @main def run = 
   println(m.toMarkdown)
 ```
+
+## How to use the reqT desktop app
+
+TODO screendumps etc

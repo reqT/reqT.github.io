@@ -46,17 +46,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <link rel="stylesheet" href="pandoc.css" type="text/css" />
 </head>
 <body>
+<img id ="header" src="https://github.com/reqT/reqT/blob/4.x/logo/reqT.jpg?raw=true" width="100" class="headimg"> 
+
+<h1> reqT - requirements tool </h1>
+
+<p> reqT is an open source requirements engineering tool for software developers based on reqT-lang using common requirements engineering concepts.</p>
 <div id="TOC">
 <ul>
-<li><a href="#reqt---requirements-tool">reqT - requirements tool</a><ul>
 <li><a href="#resources">Resources</a></li>
 <li><a href="#getting-started">Getting Started</a></li>
-</ul></li>
+<li><a href="#how-to-use-the-reqt-desktop-app">How to use the reqT desktop app</a></li>
 </ul>
 </div>
-<p><img src="https://github.com/reqT/reqT/blob/4.x/logo/reqT.jpg?raw=true" width="100"></p>
-<h1 id="reqt---requirements-tool">reqT - requirements tool</h1>
-<p><strong>reqT</strong> is an <strong>open source requirements engineering tool</strong> for <strong>software developers</strong> based on <strong>reqT-lang</strong> using <strong>common requirements engineering concepts</strong></p>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">Download app</a></li>
@@ -83,7 +84,7 @@ val res0: reqt.Model =
   Model(Rel(Ent(Feature,helloWorld),Has,Model(StrAttr(Spec,print greeting))))
 scala&gt; </code></pre>
 <ul>
-<li>You can also use reqT as a library in Scala programs. Example: <a href="https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala"><code>hello-reqt.scala</code></a></li>
+<li>You can also use reqT as a library in Scala programs and run with <code>scala run hello-reqt.scala</code> after downloading example: <a href="https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala"><code>hello-reqt.scala</code></a></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode scala"><code class="sourceCode scala"><span class="co">//&gt; using scala 3.6.2</span>
 <span class="co">//&gt; using dep &quot;reqt:reqt:4.0.0-RC2,url=https://github.com/reqT/reqT/releases/download/v4.0.0-RC2/reqT-4.0.0-RC2.jar&quot;</span>
@@ -95,6 +96,10 @@ scala&gt; </code></pre>
 
 @main <span class="kw">def</span> run = 
   <span class="fu">println</span>(m.<span class="fu">toMarkdown</span>)</code></pre></div>
+<h2 id="how-to-use-the-reqt-desktop-app">How to use the reqT desktop app</h2>
+<p>TODO screendumps etc</p>
+<div id="footer">
 <p>  reqT Repo: <a href="https://github.com/reqT/">github.com/reqT</a>   reqT Maintainer: <a href="https://cs.lth.se/bjorn-regnell/">Björn Regnell</a></p>
+</div>
 </body>
 </html>

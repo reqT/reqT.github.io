@@ -8,7 +8,7 @@
 extension (s: String) def toProc = os.proc(s.split(" ").toSeq)
 
 val buildFooter = "pandoc footer.md -o footer.html"
-val buildIndex  = "pandoc -s --toc -c pandoc.css -A footer.html index.md -o index.html"
+val buildIndex  = "pandoc -s --toc -c pandoc.css -A footer.html -B header.html index.md -o index.html"
 
 @main def build = // https://pandoc.org/demos.html
   println("Using https://pandoc.org to build with Scala toolkit os.proc")
