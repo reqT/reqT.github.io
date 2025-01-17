@@ -51,7 +51,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1> reqT - requirements tool </h1>
 
-<p> <b>reqT</b> is an <a href="https://github.com/reqT/">open source</a> tool for software developers based on <b>reqT-lang</b>, a modelling language using common requirements engineering concepts. Used by <a href="https://cs.lth.se/krav/">Lund University</a>. Maintained by <a href="https://cs.lth.se/bjorn-regnell/">Prof. Björn Regnell.</a></p>
+<p> <b>reqT</b> is an open source tool for software developers based on <b>reqT-lang</b>, a modelling language using common requirements engineering concepts. Used by <a href="https://cs.lth.se/krav/">Lund University</a>. Maintained by <a href="https://cs.lth.se/bjorn-regnell/">Prof. Björn Regnell.</a></p>
 <div id="TOC">
 <ul>
 <li><a href="#reqt-resources">reqT Resources</a></li>
@@ -75,23 +75,23 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><p>Learn more about <a href="#using-the-reqt-app">using the reqT app</a></p></li>
 <li><p>Start reqT in Scala repl using: <code>java -jar reqT.jar repl</code></p></li>
 </ul>
-<pre><code>$ java -jar reqT.jar repl
-Welcome to reqT v4.0.0.
-Type &#39;import reqt.*&#39; for direct access to full api.
-Type &#39;edit&#39; to open an editor window.
-Type &#39;help&#39; for more information on how to use reqT.
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">java</span> -jar reqT.jar repl
+<span class="ex">Welcome</span> to reqT v4.0.0.
+<span class="ex">Type</span> <span class="st">&#39;import reqt.*&#39;</span> for direct access to full api.
+<span class="ex">Type</span> <span class="st">&#39;edit&#39;</span> to open an editor window.
+<span class="ex">Type</span> <span class="st">&#39;help&#39;</span> for more information on how to use reqT.
 
-Welcome to Scala 3.6.3 (17.0.13, Java OpenJDK 64-Bit Server VM).
-Type in expressions for evaluation. Or try :help.
+<span class="ex">Welcome</span> to Scala 3.6.3 (17.0.13, Java OpenJDK 64-Bit Server VM)<span class="ex">.</span>
+<span class="ex">Type</span> in expressions for evaluation. Or try :help.
 
-scala&gt; import reqt.*
+<span class="ex">scala</span><span class="op">&gt;</span> import reqt.*
 
-scala&gt; m&quot;* Feature: helloWorld has Spec: print greeting&quot;
-val res0: reqt.Model = 
-  Model(Rel(Ent(Feature,helloWorld),Has,
-    Model(StrAttr(Spec,print greeting))))
+<span class="ex">scala</span><span class="op">&gt;</span> m<span class="st">&quot;* Feature: helloWorld has Spec: print greeting&quot;</span>
+<span class="ex">val</span> res0: reqt.Model = 
+  <span class="ex">Model</span>(Rel(Ent(Feature,helloWorld),<span class="ex">Has</span>,
+    <span class="ex">Model</span>(StrAttr(Spec,print greeting))))
 
-scala&gt; </code></pre>
+<span class="ex">scala</span><span class="op">&gt;</span> </code></pre></div>
 <ul>
 <li>You can use reqT as a library in Scala programs. Download example below here: <a href="https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala"><code>hello-reqt.scala</code></a> and run in terminal using: <code>scala run hello-reqt.scala</code></li>
 </ul>
