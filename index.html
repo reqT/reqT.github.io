@@ -11,18 +11,24 @@
 <body>
 <div id="TOC">
 <ul>
-<li><a href="#reqt---requirements-tool">reqT - requirements tool</a><ul>
+<li><a href="#reqt-docs">reqT docs</a><ul>
 <li><a href="#getting-started">Getting Started</a></li>
 </ul></li>
 </ul>
 </div>
-<h1 id="reqt---requirements-tool">reqT - requirements tool</h1>
-<p>This is the homepage och reqT - a requirements engineering tool for software developers.</p>
-<p>With reqT you can model software requirements using common requirements engineering concepts.</p>
+<h1 id="reqt-docs">reqT docs</h1>
+<ul>
+<li><p>reqT is an open source requirements engineering tool for software developers.</p></li>
+<li><p>Download <a href="https://github.com/reqT/reqT/releases/latest">latest stable desktop app</a>.</p></li>
+</ul>
 <h2 id="getting-started">Getting Started</h2>
 <ul>
-<li>TODO</li>
+<li><p>Make sure you have <a href="">Java 21</a> and <a href="">Scala 3</a> installed for your system.</p></li>
+<li><p>Download <a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">desktop app</a> and double-click or run in terminal using: <code>java -jar reqT.jar</code></p></li>
+<li><p>You can also use reqT as a library in Scala programs. Example in file <a href="hello-reqt.scala"><code>hello-reqt.scala</code></a> ```scala //&gt; using scala 3.6.2 //&gt; using dep &quot;reqt:reqt:4.0.0-RC2,url=https://github.com/reqT/reqT/releases/download/v4.0.0-RC2/reqT-4.0.0-RC2.jar&quot;</p></li>
 </ul>
+<p>import reqt.* val m = Model( Feature(&quot;helloWorld&quot;) has Spec(&quot;print greeting&quot;) )</p>
+<p><span class="citation">@main</span> def run = println(m.toMarkdown) ``` Replace versions with <a href="https://www.scala-lang.org/download/all.html">lastest Scala release</a> and <a href="https://github.com/reqT/reqT/releases">latest reqT release</a>.</p>
 <p><a href="https://github.com/reqT">github.com/reqT</a></p>
 </body>
 </html>
