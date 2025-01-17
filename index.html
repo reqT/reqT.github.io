@@ -66,8 +66,23 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul>
 <h2 id="getting-started">Getting Started</h2>
 <ul>
-<li>Make sure you have <a href="">Java 21</a> and <a href="">Scala 3</a> installed for your system.</li>
-<li>Download <a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">desktop app</a> and double-click or run in terminal using: <code>java -jar reqT.jar</code></li>
+<li><p>Make sure you have <a href="">Java 21</a> and <a href="">Scala 3</a> installed for your system.</p></li>
+<li><p>Download <a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">desktop app</a> and double-click or run in terminal using: <code>java -jar reqT.jar</code></p></li>
+<li><p>Start reqT in Scala repl using: <code>java -jar reqT.jar repl</code></p></li>
+</ul>
+<pre><code>$ java -jar reqT.jar repl
+Type &#39;import reqt.*&#39; for direct access to full api.
+Type &#39;edit&#39; to open an editor window.
+Type &#39;help&#39; for more information on how to use reqT.
+
+Welcome to Scala 3.6.3 (17.0.13, Java OpenJDK 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+scala&gt; import reqt.*
+scala&gt; m&quot;* Feature: helloWorld has Spec: print greeting&quot;
+val res0: reqt.Model = 
+  Model(Rel(Ent(Feature,helloWorld),Has,Model(StrAttr(Spec,print greeting))))
+scala&gt; </code></pre>
+<ul>
 <li>You can also use reqT as a library in Scala programs. Example: <a href="https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala"><code>hello-reqt.scala</code></a></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode scala"><code class="sourceCode scala"><span class="co">//&gt; using scala 3.6.2</span>

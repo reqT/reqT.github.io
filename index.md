@@ -14,11 +14,26 @@
 ## Getting Started
 
 * Make sure you have [Java 21]() and [Scala 3]() installed for your system. 
-* Download [desktop app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) and double-click or run in terminal using: 
-  ```
-  java -jar reqT.jar
-  ```
-* You can also use reqT as a library in Scala programs. Example: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala)
+
+* Download [desktop app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) and double-click or run in terminal using: `java -jar reqT.jar`
+
+* Start reqT in Scala repl using: `java -jar reqT.jar repl`
+
+```
+$ java -jar reqT.jar repl
+Type 'import reqt.*' for direct access to full api.
+Type 'edit' to open an editor window.
+Type 'help' for more information on how to use reqT.
+
+Welcome to Scala 3.6.3 (17.0.13, Java OpenJDK 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+scala> import reqt.*
+scala> m"* Feature: helloWorld has Spec: print greeting"
+val res0: reqt.Model = 
+  Model(Rel(Ent(Feature,helloWorld),Has,Model(StrAttr(Spec,print greeting))))
+scala> 
+```
+* You can also use reqT as a library in Scala programs. Example: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala) 
 
 ```scala
 //> using scala 3.6.2
