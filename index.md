@@ -23,11 +23,14 @@ Type 'help' for more information on how to use reqT.
 
 Welcome to Scala 3.6.3 (17.0.13, Java OpenJDK 64-Bit Server VM).
 Type in expressions for evaluation. Or try :help.
+
 scala> import reqt.*
+
 scala> m"* Feature: helloWorld has Spec: print greeting"
 val res0: reqt.Model = 
   Model(Rel(Ent(Feature,helloWorld),Has,
     Model(StrAttr(Spec,print greeting))))
+
 scala> 
 ```
 * Use reqT as a library in Scala programs, run with `scala run hello-reqt.scala` after downloading example: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala) 

@@ -81,11 +81,14 @@ Type &#39;help&#39; for more information on how to use reqT.
 
 Welcome to Scala 3.6.3 (17.0.13, Java OpenJDK 64-Bit Server VM).
 Type in expressions for evaluation. Or try :help.
+
 scala&gt; import reqt.*
+
 scala&gt; m&quot;* Feature: helloWorld has Spec: print greeting&quot;
 val res0: reqt.Model = 
   Model(Rel(Ent(Feature,helloWorld),Has,
     Model(StrAttr(Spec,print greeting))))
+
 scala&gt; </code></pre>
 <ul>
 <li>Use reqT as a library in Scala programs, run with <code>scala run hello-reqt.scala</code> after downloading example: <a href="https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala"><code>hello-reqt.scala</code></a></li>
@@ -94,6 +97,7 @@ scala&gt; </code></pre>
 <span class="co">//&gt; using dep &quot;reqt:reqt:4.0.0-RC2,url=https://github.com/reqT/reqT/releases/download/v4.0.0-RC2/reqT-4.0.0-RC2.jar&quot;</span>
 
 <span class="kw">import</span> reqt.*
+
 <span class="kw">val</span> m = <span class="fu">Model</span>(
     <span class="fu">Feature</span>(<span class="st">&quot;helloWorld&quot;</span>) has <span class="fu">Spec</span>(<span class="st">&quot;print greeting&quot;</span>)
   )
