@@ -1,11 +1,11 @@
-## Resources
+## reqT Resources
 
 * [Download app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) 
 * [Quickref](https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf) 
 * [Language specification](https://github.com/reqT/reqT-lang/blob/main/docs/langSpec-GENERATED.md) 
 * [Source code](https://github.com/reqT)
 
-## Getting Started
+## Getting Started with reqT
 
 * Make sure you have [Java 21](https://adoptium.net/temurin/releases/?package=jdk&version=21) and [Scala 3](https://www.scala-lang.org/download/) installed for your system. 
 
@@ -43,6 +43,6 @@ val m = Model(
   println(m.toMarkdown)
 ```
 
-## How to use the reqT desktop app
+## Using the reqT App
 
 TODO screendumps etc
