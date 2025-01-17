@@ -13,7 +13,7 @@
 
 ## Getting Started
 
-* Make sure you have [Java 21]() and [Scala 3]() installed for your system. 
+* Make sure you have [Java 21](https://adoptium.net/temurin/releases/?package=jdk&version=21) and [Scala 3](https://www.scala-lang.org/download/) installed for your system. 
 
 * Download [desktop app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) and double-click or run in terminal using: `java -jar reqT.jar`
 
