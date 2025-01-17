@@ -9,7 +9,7 @@
 
 * Make sure you have [Java 21](https://adoptium.net/temurin/releases/?package=jdk&version=21) and [Scala 3](https://www.scala-lang.org/download/) installed for your system. 
 
-* Download [desktop app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) and double-click or run in terminal using: `java -jar reqT.jar` 
+* Download the [reqT desktop app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) and *double-click* or run in terminal using: `java -jar reqT.jar` 
 
 * Learn more about [using the reqT app](#using-the-reqt-app)
 
@@ -34,7 +34,7 @@ val res0: reqt.Model =
 
 scala> 
 ```
-* Use reqT as a library in Scala programs, run with `scala run hello-reqt.scala` after downloading example: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala) 
+* You can use reqT as a library in Scala programs. Download example below here: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala) and run in terminal using: `scala run hello-reqt.scala`  
 
 ```scala
 //> using scala 3.6.2
