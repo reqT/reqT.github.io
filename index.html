@@ -6,29 +6,80 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
   <link rel="stylesheet" href="pandoc.css" type="text/css" />
 </head>
 <body>
 <div id="TOC">
 <ul>
-<li><a href="#reqt-docs">reqT docs</a><ul>
+<li><a href="#reqt---requirements-tool">reqT - requirements tool</a><ul>
+<li><a href="#resources">Resources</a></li>
 <li><a href="#getting-started">Getting Started</a></li>
 </ul></li>
 </ul>
 </div>
-<h1 id="reqt-docs">reqT docs</h1>
+<p><img src="https://github.com/reqT/reqT/blob/4.x/logo/reqT.jpg?raw=true" width="100"></p>
+<h1 id="reqt---requirements-tool">reqT - requirements tool</h1>
+<p><strong>reqT</strong> is an <strong>open source requirements engineering tool</strong> for <strong>software developers</strong> based on <strong>reqT-lang</strong> using <strong>common requirements engineering concepts</strong></p>
+<h2 id="resources">Resources</h2>
 <ul>
-<li><p>reqT is an open source requirements engineering tool for software developers.</p></li>
-<li><p>Download <a href="https://github.com/reqT/reqT/releases/latest">latest stable desktop app</a>.</p></li>
+<li><a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">Download app</a></li>
+<li><a href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf">Quickref</a></li>
+<li><a href="https://github.com/reqT/reqT-lang/blob/main/docs/langSpec-GENERATED.md">Language specification</a></li>
+<li><a href="https://github.com/reqT">Source code</a></li>
 </ul>
 <h2 id="getting-started">Getting Started</h2>
 <ul>
-<li><p>Make sure you have <a href="">Java 21</a> and <a href="">Scala 3</a> installed for your system.</p></li>
-<li><p>Download <a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">desktop app</a> and double-click or run in terminal using: <code>java -jar reqT.jar</code></p></li>
-<li><p>You can also use reqT as a library in Scala programs. Example in file <a href="hello-reqt.scala"><code>hello-reqt.scala</code></a> ```scala //&gt; using scala 3.6.2 //&gt; using dep &quot;reqt:reqt:4.0.0-RC2,url=https://github.com/reqT/reqT/releases/download/v4.0.0-RC2/reqT-4.0.0-RC2.jar&quot;</p></li>
+<li>Make sure you have <a href="">Java 21</a> and <a href="">Scala 3</a> installed for your system.</li>
+<li>Download <a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">desktop app</a> and double-click or run in terminal using: <code>java -jar reqT.jar</code></li>
+<li>You can also use reqT as a library in Scala programs. Example: <a href="https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala"><code>hello-reqt.scala</code></a></li>
 </ul>
-<p>import reqt.* val m = Model( Feature(&quot;helloWorld&quot;) has Spec(&quot;print greeting&quot;) )</p>
-<p><span class="citation">@main</span> def run = println(m.toMarkdown) ``` Replace versions with <a href="https://www.scala-lang.org/download/all.html">lastest Scala release</a> and <a href="https://github.com/reqT/reqT/releases">latest reqT release</a>.</p>
-<p><a href="https://github.com/reqT">github.com/reqT</a></p>
+<div class="sourceCode"><pre class="sourceCode scala"><code class="sourceCode scala"><span class="co">//&gt; using scala 3.6.2</span>
+<span class="co">//&gt; using dep &quot;reqt:reqt:4.0.0-RC2,url=https://github.com/reqT/reqT/releases/download/v4.0.0-RC2/reqT-4.0.0-RC2.jar&quot;</span>
+
+<span class="kw">import</span> reqt.*
+<span class="kw">val</span> m = <span class="fu">Model</span>(
+    <span class="fu">Feature</span>(<span class="st">&quot;helloWorld&quot;</span>) has <span class="fu">Spec</span>(<span class="st">&quot;print greeting&quot;</span>)
+  )
+
+@main <span class="kw">def</span> run = 
+  <span class="fu">println</span>(m.<span class="fu">toMarkdown</span>)</code></pre></div>
+<p>  reqT Repo: <a href="https://github.com/reqT/">github.com/reqT</a>   reqT Maintainer: <a href="https://cs.lth.se/bjorn-regnell/">Björn Regnell</a></p>
 </body>
 </html>
