@@ -55,7 +55,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <ul>
 <li><a href="#reqt-resources">reqT Resources</a></li>
 <li><a href="#getting-started-with-reqt">Getting Started with reqT</a></li>
+<li><a href="#why-reqt">Why reqT?</a></li>
 <li><a href="#using-the-reqt-app">Using the reqT App</a></li>
+<li><a href="#using-reqt-with-scala">Using reqT with Scala</a></li>
 </ul>
 </div>
 <h2 id="reqt-resources">reqT Resources</h2>
@@ -69,6 +71,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <ul>
 <li><p>Make sure you have <a href="https://adoptium.net/temurin/releases/?package=jdk&amp;version=21">Java 21</a> and <a href="https://www.scala-lang.org/download/">Scala 3</a> installed for your system.</p></li>
 <li><p>Download <a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">desktop app</a> and double-click or run in terminal using: <code>java -jar reqT.jar</code></p></li>
+<li><p>Learn more about <a href="#using-the-reqt-app">using the reqT app</a></p></li>
 <li><p>Start reqT in Scala repl using: <code>java -jar reqT.jar repl</code></p></li>
 </ul>
 <pre><code>$ java -jar reqT.jar repl
@@ -85,7 +88,7 @@ val res0: reqt.Model =
     Model(StrAttr(Spec,print greeting))))
 scala&gt; </code></pre>
 <ul>
-<li>You can also use reqT as a library in Scala programs and run with <code>scala run hello-reqt.scala</code> after downloading example: <a href="https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala"><code>hello-reqt.scala</code></a></li>
+<li>Use reqT as a library in Scala programs, run with <code>scala run hello-reqt.scala</code> after downloading example: <a href="https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala"><code>hello-reqt.scala</code></a></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode scala"><code class="sourceCode scala"><span class="co">//&gt; using scala 3.6.2</span>
 <span class="co">//&gt; using dep &quot;reqt:reqt:4.0.0-RC2,url=https://github.com/reqT/reqT/releases/download/v4.0.0-RC2/reqT-4.0.0-RC2.jar&quot;</span>
@@ -97,8 +100,12 @@ scala&gt; </code></pre>
 
 @main <span class="kw">def</span> run = 
   <span class="fu">println</span>(m.<span class="fu">toMarkdown</span>)</code></pre></div>
+<h2 id="why-reqt">Why reqT?</h2>
+<p>TODO rationale for requirements as code</p>
 <h2 id="using-the-reqt-app">Using the reqT App</h2>
 <p>TODO screendumps etc</p>
+<h2 id="using-reqt-with-scala">Using reqT with Scala</h2>
+<p>TODO example usages of the reqT-lang api</p>
 <div id="footer">
 <p>reqT Repo: <a href="https://github.com/reqT/">github.com/reqT</a>   reqT Maintainer: <a href="https://cs.lth.se/bjorn-regnell/">Björn Regnell</a></p>
 </div>

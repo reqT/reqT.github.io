@@ -9,7 +9,9 @@
 
 * Make sure you have [Java 21](https://adoptium.net/temurin/releases/?package=jdk&version=21) and [Scala 3](https://www.scala-lang.org/download/) installed for your system. 
 
-* Download [desktop app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) and double-click or run in terminal using: `java -jar reqT.jar`
+* Download [desktop app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) and double-click or run in terminal using: `java -jar reqT.jar` 
+
+* Learn more about [using the reqT app](#using-the-reqt-app)
 
 * Start reqT in Scala repl using: `java -jar reqT.jar repl`
 
@@ -28,7 +30,7 @@ val res0: reqt.Model =
     Model(StrAttr(Spec,print greeting))))
 scala> 
 ```
-* You can also use reqT as a library in Scala programs and run with `scala run hello-reqt.scala` after downloading example: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala) 
+* Use reqT as a library in Scala programs, run with `scala run hello-reqt.scala` after downloading example: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala) 
 
 ```scala
 //> using scala 3.6.2
@@ -43,6 +45,14 @@ val m = Model(
   println(m.toMarkdown)
 ```
 
+## Why reqT?
+
+TODO rationale for requirements as code
+
 ## Using the reqT App
 
 TODO screendumps etc
+
+## Using reqT with Scala
+
+TODO example usages of the reqT-lang api
