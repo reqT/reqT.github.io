@@ -17,6 +17,7 @@
 
 ```
 $ java -jar reqT.jar repl
+Welcome to reqT v4.0.0.
 Type 'import reqt.*' for direct access to full api.
 Type 'edit' to open an editor window.
 Type 'help' for more information on how to use reqT.
