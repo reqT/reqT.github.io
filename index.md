@@ -24,7 +24,8 @@ Type in expressions for evaluation. Or try :help.
 scala> import reqt.*
 scala> m"* Feature: helloWorld has Spec: print greeting"
 val res0: reqt.Model = 
-  Model(Rel(Ent(Feature,helloWorld),Has,Model(StrAttr(Spec,print greeting))))
+  Model(Rel(Ent(Feature,helloWorld),Has,
+    Model(StrAttr(Spec,print greeting))))
 scala> 
 ```
 * You can also use reqT as a library in Scala programs and run with `scala run hello-reqt.scala` after downloading example: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala) 

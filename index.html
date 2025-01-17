@@ -81,7 +81,8 @@ Type in expressions for evaluation. Or try :help.
 scala&gt; import reqt.*
 scala&gt; m&quot;* Feature: helloWorld has Spec: print greeting&quot;
 val res0: reqt.Model = 
-  Model(Rel(Ent(Feature,helloWorld),Has,Model(StrAttr(Spec,print greeting))))
+  Model(Rel(Ent(Feature,helloWorld),Has,
+    Model(StrAttr(Spec,print greeting))))
 scala&gt; </code></pre>
 <ul>
 <li>You can also use reqT as a library in Scala programs and run with <code>scala run hello-reqt.scala</code> after downloading example: <a href="https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala"><code>hello-reqt.scala</code></a></li>
@@ -99,7 +100,7 @@ scala&gt; </code></pre>
 <h2 id="how-to-use-the-reqt-desktop-app">How to use the reqT desktop app</h2>
 <p>TODO screendumps etc</p>
 <div id="footer">
-<p>  reqT Repo: <a href="https://github.com/reqT/">github.com/reqT</a>   reqT Maintainer: <a href="https://cs.lth.se/bjorn-regnell/">Björn Regnell</a></p>
+<p>reqT Repo: <a href="https://github.com/reqT/">github.com/reqT</a>   reqT Maintainer: <a href="https://cs.lth.se/bjorn-regnell/">Björn Regnell</a></p>
 </div>
 </body>
 </html>

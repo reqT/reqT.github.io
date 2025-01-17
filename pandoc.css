@@ -13,12 +13,12 @@ body {
 }
 pre {
   border: 1px dotted gray;
-  background-color: #ececec;
+  background-color: #f3f3f3;
   color: #111111;
   padding: 0.5em;
 }
 code {
-  font-family: monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a { 
   text-decoration: none;
@@ -70,18 +70,18 @@ dd p {
 #footer, #TOC {
   color: rgb(1, 39, 3);
   background-color: #ddffdd;
-  font-size: 90%;
 }
 
 #footer{
       padding-top: 1em;
       padding-bottom: 1em;
       text-align: center;
-      }
+      font-size: 90%;
+    }
 
 #TOC {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 #header {
