@@ -2,12 +2,12 @@ body {
   margin: auto;
   padding-right: 1em;
   padding-left: 1em;
-  max-width: 44em; 
+  max-width: 45em; 
   border-left: 1px solid black;
   border-right: 1px solid black;
   color: black;
-  font-family: Verdana, sans-serif;
-  font-size: 100%;
+  font-family: ui-sans-serif, Verdana, Helvetica, ui-sans-serif, sans-serif;
+  font-size: 120%;
   line-height: 140%;
   color: #333; 
 }
@@ -18,14 +18,13 @@ pre {
   padding: 0.5em;
 }
 code {
-  font-family: ui-monospace, 'Courier New', Consolas, Monaco, Courier, monospace;
+  font-family: 'Courier New', Courier, ui-monospace, monospace;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a { 
   text-decoration: none;
   color: #7a5ada; 
 }
 h1, h2, h3, h4, h5 { 
-  font-family: ui-sans-serif, Helvetica, "Trebuchet MS", Verdana, sans-serif;
   font-weight: bold;
   border-bottom: 1px dotted black;
   color: #008332; }
