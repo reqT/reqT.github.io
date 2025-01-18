@@ -18,17 +18,17 @@ pre {
   padding: 0.5em;
 }
 code {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: ui-monospace, 'Courier New', Consolas, Monaco, Courier, monospace;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a { 
   text-decoration: none;
   color: #7a5ada; 
 }
 h1, h2, h3, h4, h5 { 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ui-sans-serif, Helvetica, "Trebuchet MS", Verdana, sans-serif;
   font-weight: bold;
   border-bottom: 1px dotted black;
-  color: #7a5ada; }
+  color: #008332; }
 h1 {
       font-size: 130%;
 }

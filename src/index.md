@@ -4,6 +4,7 @@
 * [Quickref](https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf) 
 * [Language specification](https://github.com/reqT/reqT-lang/blob/main/docs/langSpec-GENERATED.md) 
 * [Source code](https://github.com/reqT)
+* [reqT Tutorial Labs](https://cs.lth.se/krav/labs/)
 
 ## Getting Started with reqT
 
@@ -52,12 +53,18 @@ val m = Model(
 
 ## Why reqT?
 
-TODO rationale for requirements as code
+* TODO: add rationale for requirements as code from old site here: [reqt.org](https://reqt.org/index.html)
 
 ## Using the reqT App
 
-TODO screendumps etc
+* TODO: screendumps etc
 
 ## Using reqT with Scala
 
-TODO example usages of the reqT-lang api
+* TODO: example usage of the [reqT-lang api](https://github.com/reqT/reqT-lang)
+
+* TODO: example usage of the [reqT command-line args](https://github.com/reqT/reqT/blob/4.x/src/main/scala/Main.scala)
+
+## Publications
+
+* TODO: move papers from here: [reqt.org/documentation.html#pub](https://reqt.org/documentation.html#pub)

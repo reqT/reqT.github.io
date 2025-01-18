@@ -47,11 +47,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <link rel="icon" type="image/jpg" href="favicon.jpg" />
 </head>
 <body>
-<img id ="header" src="favicon.jpg" width="100" class="headimg"> 
-
-<h1> reqT - requirements tool </h1>
-
-<p> <b>reqT</b> is an open source tool for software developers based on <b>reqT-lang</b>, a modelling language using common requirements engineering concepts. Used by <a href="https://cs.lth.se/krav/">Lund University</a>. Maintained by <a href="https://cs.lth.se/bjorn-regnell/">Prof. Björn Regnell.</a></p>
+<p><img id ="header" src="favicon.jpg" width="100" class="headimg"></p>
+<h1>
+reqT - requirements tool
+</h1>
+<p>
+<b>reqT</b> is an open source tool for developers and students based on <b>reqT-lang</b>, a modelling language using common requirements engineering concepts. </br> Maintainer: <a href="https://cs.lth.se/bjorn-regnell/">Prof. Björn Regnell</a>. Used at Lund Univ. in this <a href="https://cs.lth.se/krav/">SW Req. Eng. course</a>.
+</p>
 <div id="TOC">
 <ul>
 <li><a href="#reqt-resources">reqT Resources</a></li>
@@ -59,6 +61,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><a href="#why-reqt">Why reqT?</a></li>
 <li><a href="#using-the-reqt-app">Using the reqT App</a></li>
 <li><a href="#using-reqt-with-scala">Using reqT with Scala</a></li>
+<li><a href="#publications">Publications</a></li>
 </ul>
 </div>
 <h2 id="reqt-resources">reqT Resources</h2>
@@ -67,16 +70,17 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><a href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf">Quickref</a></li>
 <li><a href="https://github.com/reqT/reqT-lang/blob/main/docs/langSpec-GENERATED.md">Language specification</a></li>
 <li><a href="https://github.com/reqT">Source code</a></li>
+<li><a href="https://cs.lth.se/krav/labs/">reqT Tutorial Labs</a></li>
 </ul>
 <h2 id="getting-started-with-reqt">Getting Started with reqT</h2>
 <ul>
 <li><p>Make sure you have <a href="https://adoptium.net/temurin/releases/?package=jdk&amp;version=21">Java 21</a> and <a href="https://www.scala-lang.org/download/">Scala 3</a> installed for your system.</p></li>
-<li><p>Download the <a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">reqT desktop app</a> and <em>double-click</em> or run in terminal using: <code>java -jar reqT.jar</code></p></li>
+<li><p>Download the <a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">reqT desktop app</a> and run in terminal using: <code>java -jar reqT.jar</code></p></li>
 <li><p>Learn more about <a href="#using-the-reqt-app">using the reqT app</a></p></li>
 <li><p>Start reqT in Scala repl using: <code>java -jar reqT.jar repl</code></p></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">java</span> -jar reqT.jar repl
-<span class="ex">Welcome</span> to reqT v4.0.0.
+<span class="ex">Welcome</span> to reqT v4.0.0
 <span class="ex">Type</span> <span class="st">&#39;import reqt.*&#39;</span> for direct access to full api.
 <span class="ex">Type</span> <span class="st">&#39;edit&#39;</span> to open an editor window.
 <span class="ex">Type</span> <span class="st">&#39;help&#39;</span> for more information on how to use reqT.
@@ -107,11 +111,22 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 @main <span class="kw">def</span> run = 
   <span class="fu">println</span>(m.<span class="fu">toMarkdown</span>)</code></pre></div>
 <h2 id="why-reqt">Why reqT?</h2>
-<p>TODO rationale for requirements as code</p>
+<ul>
+<li>TODO: add rationale for requirements as code from old site here: <a href="https://reqt.org/index.html">reqt.org</a></li>
+</ul>
 <h2 id="using-the-reqt-app">Using the reqT App</h2>
-<p>TODO screendumps etc</p>
+<ul>
+<li>TODO: screendumps etc</li>
+</ul>
 <h2 id="using-reqt-with-scala">Using reqT with Scala</h2>
-<p>TODO example usages of the reqT-lang api</p>
+<ul>
+<li><p>TODO: example usage of the <a href="https://github.com/reqT/reqT-lang">reqT-lang api</a></p></li>
+<li><p>TODO: example usage of the <a href="https://github.com/reqT/reqT/blob/4.x/src/main/scala/Main.scala">reqT command-line args</a></p></li>
+</ul>
+<h2 id="publications">Publications</h2>
+<ul>
+<li>TODO: move papers from here: <a href="https://reqt.org/documentation.html#pub">reqt.org/documentation.html#pub</a></li>
+</ul>
 <div id="footer">
 <p>reqT Repo: <a href="https://github.com/reqT/">github.com/reqT</a>   reqT Maintainer: <a href="https://cs.lth.se/bjorn-regnell/">Prof. Björn Regnell</a></p>
 </div>
