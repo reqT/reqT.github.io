@@ -38,7 +38,16 @@ scala>
 * You can use reqT as a library in Scala programs. Download example below here: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala) and run in terminal using: `scala run hello-reqt.scala`  
 
 ```scala
-# INCLUDE hello-reqt.scala
+//> using scala 3.6.2
+//> using dep "reqt:reqt:4.0.0-RC2,url=https://github.com/reqT/reqT/releases/download/v4.0.0-RC2/reqT-4.0.0-RC2.jar"
+
+import reqt.*
+val m = Model(
+    Feature("helloWorld") has Spec("print greeting")
+  )
+
+@main def hello = 
+  println(m.toMarkdown)
 ```
 
 ## Why reqT?

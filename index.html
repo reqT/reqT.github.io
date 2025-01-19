@@ -74,7 +74,7 @@ reqT - requirements tool
 </ul>
 <h2 id="getting-started-with-reqt">Getting Started with reqT</h2>
 <ul>
-<li><p>Make sure you have <a href="https://adoptium.net/temurin/releases/?package=jdk&amp;version=21">Java 21</a> and <a href="https://www.scala-lang.org/download/">Scala 3</a> installed for your system.</p></li>
+<li><p>Make sure you have <a href="https://adoptium.net/temurin/releases/?package=jdk&amp;version=21">Java 21</a> and <a href="https://www.scala-lang.org/download/">Scala 3</a> installed for your system. Check this in terminal using: </br><code>java -version</code></br><code>scala -version</code></p></li>
 <li><p>Download the <a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">reqT desktop app</a> and run in terminal using: <code>java -jar reqT.jar</code></p></li>
 <li><p>Learn more about <a href="#using-the-reqt-app">using the reqT app</a></p></li>
 <li><p>Start reqT in Scala repl using: <code>java -jar reqT.jar repl</code></p></li>
@@ -103,12 +103,11 @@ reqT - requirements tool
 <span class="co">//&gt; using dep &quot;reqt:reqt:4.0.0-RC2,url=https://github.com/reqT/reqT/releases/download/v4.0.0-RC2/reqT-4.0.0-RC2.jar&quot;</span>
 
 <span class="kw">import</span> reqt.*
-
 <span class="kw">val</span> m = <span class="fu">Model</span>(
     <span class="fu">Feature</span>(<span class="st">&quot;helloWorld&quot;</span>) has <span class="fu">Spec</span>(<span class="st">&quot;print greeting&quot;</span>)
   )
 
-@main <span class="kw">def</span> run = 
+@main <span class="kw">def</span> hello = 
   <span class="fu">println</span>(m.<span class="fu">toMarkdown</span>)</code></pre></div>
 <h2 id="why-reqt">Why reqT?</h2>
 <ul>
