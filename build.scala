@@ -37,7 +37,8 @@ val commands = Seq(buildTop, buildFooter, buildIndex)
 @main def build = // https://pandoc.org/demos.html
   import Console.{RED as redFg, GREEN as greenFg, RED_B as redBg, RESET, BLACK as blackFg}
 
-  println("\n--- BUILDING reqt.github.io using https://pandoc.org with Scala toolkit os.proc ---")
+  println("\n--- BUILDING reqt.github.io ---")
+  
   "index.md".insertIncludesTo("index-GENERATED.md")
 
   print(redBg + blackFg) 

@@ -35,7 +35,7 @@ val res0: reqt.Model =
 
 scala> 
 ```
-* You can use reqT as a library in Scala programs. Download example below here: [`hello-reqt.scala`](https://github.com/reqT/reqT/blob/4.x/hello-reqt.scala) and run in terminal using: `scala run hello-reqt.scala`  
+* You can use reqT as a library in Scala programs. Download example below here: [`hello-reqt.scala`](https://github.com/reqT/reqT.github.io/blob/master/src/hello-reqt.scala) and run in terminal using: `scala run hello-reqt.scala`  
 
 ```scala
 # INCLUDE hello-reqt.scala
