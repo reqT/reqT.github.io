@@ -51,7 +51,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1 id="reqt---requirements-tool">reqT - requirements tool</h1>
 <p><strong>reqT</strong> is an open source tool for system developers based on <strong>reqT-lang</strong>, a flexible modelling language using essential requirements engineering concepts, enabling specification analysis and automation.</p>
 <pre><code>* Feature: helloWorld has 
-  * Spec: print greeting</code></pre>
+  * Spec: Print a nice greeting.</code></pre>
 <p>Maintainer: <a href="https://cs.lth.se/bjorn-regnell">Prof. Björn Regnell</a>. Used at Lund University in <a href="https://cs.lth.se/krav">this course</a>.</p>
 <h2 id="contents">Contents</h2>
 <div id="TOC">
@@ -77,7 +77,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><p>Make sure you have <a href="https://adoptium.net/temurin/releases/?package=jdk&amp;version=21">Java 21</a> and <a href="https://www.scala-lang.org/download/">Scala 3</a> installed for your system. Check this in terminal using: </br><code>java -version</code></br><code>scala -version</code></p></li>
 <li><p>Download the <a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar">reqT desktop app</a> and run in terminal using: <code>java -jar reqT.jar</code></p></li>
 <li><p>Learn more about <a href="#using-the-reqt-app">using the reqT app</a></p></li>
-<li><p>Start reqT in Scala repl using: <code>java -jar reqT.jar repl</code></p></li>
+<li><p>Start reqT in the <a href="https://docs.scala-lang.org/scala3/book/taste-repl.html">Scala REPL</a> using: <code>java -jar reqT.jar repl</code></p></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">java</span> -jar reqT.jar repl
 <span class="ex">Welcome</span> to reqT v4.0.0
@@ -97,7 +97,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <span class="ex">scala</span><span class="op">&gt;</span> </code></pre></div>
 <ul>
-<li>You can use reqT as a library in Scala programs. Download example below here: <a href="https://github.com/reqT/reqT.github.io/blob/master/src/hello-reqt.scala"><code>hello-reqt.scala</code></a> and run in terminal using: <code>scala run hello-reqt.scala</code></li>
+<li>You can use reqT as a library in Scala programs for specification analysis and automation. Download example below here: <a href="https://github.com/reqT/reqT.github.io/blob/master/src/hello-reqt.scala"><code>hello-reqt.scala</code></a> and run in terminal using: <code>scala run hello-reqt.scala</code></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode scala"><code class="sourceCode scala"><span class="co">//&gt; using scala 3.6.2</span>
 <span class="co">//&gt; using dep &quot;reqt:reqt:4.0.0-RC2,url=https://github.com/reqT/reqT/releases/download/v4.0.0-RC2/reqT-4.0.0-RC2.jar&quot;</span>
