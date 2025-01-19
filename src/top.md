@@ -7,6 +7,7 @@
 ```
 * Feature: helloWorld has 
   * Spec: Print a nice greeting.
+  * Why: First step to get started.
 ```
 
 Maintainer: [Prof. Björn Regnell](https://cs.lth.se/bjorn-regnell). 
