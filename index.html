@@ -105,7 +105,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <span class="kw">import</span> reqt.*
 <span class="kw">val</span> m = <span class="fu">Model</span>(
-    <span class="fu">Feature</span>(<span class="st">&quot;helloWorld&quot;</span>) has <span class="fu">Spec</span>(<span class="st">&quot;print greeting&quot;</span>)
+    <span class="fu">Feature</span>(<span class="st">&quot;helloWorld&quot;</span>).<span class="fu">has</span>(
+      <span class="fu">Spec</span>(<span class="st">&quot;Print a nice greeting.&quot;</span>),
+      <span class="fu">Why</span>(<span class="st">&quot;First step to get started.&quot;</span>),
+    )
   )
 
 @main <span class="kw">def</span> hello = 

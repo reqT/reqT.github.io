@@ -43,7 +43,10 @@ scala>
 
 import reqt.*
 val m = Model(
-    Feature("helloWorld") has Spec("print greeting")
+    Feature("helloWorld").has(
+      Spec("Print a nice greeting."),
+      Why("First step to get started."),
+    )
   )
 
 @main def hello = 
