@@ -2,7 +2,7 @@
 
 # reqT - requirements tool 
 
-**reqT** is an open source tool for system developers based on **reqT-lang**, a flexible modelling language using essential requirements engineering concepts, enabling specification analysis and automation. 
+**reqT** is an open source tool for system developers based on **reqT-lang**, a flexible modelling language using [essential requirements engineering concepts](https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf), enabling specification analysis and automation. 
 
 ```
 * Feature: helloWorld has 
