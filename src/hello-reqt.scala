@@ -1,5 +1,5 @@
 //> using scala 3.6.2
-//> using dep "reqt:reqt:4.0.0-RC2,url=https://github.com/reqT/reqT/releases/download/v4.0.0-RC2/reqT-4.0.0-RC2.jar"
+//> using dep "reqt:reqt:4.4.0,url=https://github.com/reqT/reqT/releases/download/v4.4.0/reqT-4.4.0.jar"
 
 import reqt.*
 val m = Model(
