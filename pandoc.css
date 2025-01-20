@@ -118,3 +118,8 @@ button {
   font-weight: bold;
 
 }
+
+.button:hover {
+  background-color:#0051ff;
+  transition: 0.3s;
+}

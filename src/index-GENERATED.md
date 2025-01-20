@@ -15,19 +15,19 @@ Used at Lund University in [this course](https://cs.lth.se/krav).
 ```{=html}
 <div id="downloadButtons">
 
-<button onclick='window.location.href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar"'>
+<button type="button" class="button" onclick='window.location.href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar"'>
   Desktop App
 </button>
 
-<button onclick='window.location.href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf"'>
+<button type="button" class="button" onclick='window.location.href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf"'>
   Quickref
 </button>
 
-<button onclick='window.location.href="https://github.com/reqT"'>
+<button type="button" class="button" onclick='window.location.href="https://github.com/reqT"'>
   Source Code
 </button>
 
-<button onclick='window.location.href="https://github.com/reqT/reqT-lang/blob/main/docs/langSpec-GENERATED.md"'>
+<button type="button" class="button" onclick='window.location.href="https://github.com/reqT/reqT-lang/blob/main/docs/langSpec-GENERATED.md"'>
   Language Spec
 </button>
 
