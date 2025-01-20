@@ -29,8 +29,10 @@ val buildFooter = "pandoc src/footer.md -o footer.html"
 
 val buildTop = "pandoc src/top.md -o top.html"
 
-val buildIndex  = 
-  "pandoc -s --toc -c pandoc.css -A footer.html -B top.html -H header.html src/index-GENERATED.md -o index.html"
+val title = "reqT.github.io"
+
+val buildIndex  = //--metadata title=reqT 
+  s"""pandoc -s --toc -c pandoc.css -A footer.html -B top.html -H header.html --metadata title=$title src/index-GENERATED.md -o index.html"""
 
 val commands = Seq(buildTop, buildFooter, buildIndex)
 

@@ -1,13 +1,41 @@
-## reqT Resources
+**reqT** is an open source tool for developers based on **reqT-lang**, a flexible modelling language with essential requirements engineering concepts, enabling specification analysis and automation. 
 
-* [Download app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) 
-* [Quickref](https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf) 
-* [Language specification](https://github.com/reqT/reqT-lang/blob/main/docs/langSpec-GENERATED.md) 
-* [Source code](https://github.com/reqT)
-* [reqT Tutorial Labs](https://cs.lth.se/krav/labs/)
+```
+* Feature: helloWorld has 
+  * Spec: Print a nice greeting.
+  * Why: First step to get started.
+```
 
-## Getting Started with reqT
+Maintainer: [Prof. Björn Regnell](https://cs.lth.se/bjorn-regnell). 
+Used at Lund University in [this course](https://cs.lth.se/krav). 
 
+
+## Download
+
+```{=html}
+<div id="downloadButtons">
+
+<button onclick='window.location.href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar"'>
+  Desktop App
+</button>
+
+<button onclick='window.location.href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf"'>
+  Quickref
+</button>
+
+<button onclick='window.location.href="https://github.com/reqT"'>
+  Source Code
+</button>
+
+<button onclick='window.location.href="https://github.com/reqT/reqT-lang/blob/main/docs/langSpec-GENERATED.md"'>
+  Language Spec
+</button>
+
+</div>
+
+```
+
+## Getting started
 * Make sure you have [Java 21](https://adoptium.net/temurin/releases/?package=jdk&version=21) and [Scala 3](https://www.scala-lang.org/download/) installed for your system. Check this in terminal using: </br>`java -version`</br>`scala -version`
 
 * Download the [reqT desktop app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) and run in terminal using: `java -jar reqT.jar` 

@@ -18,7 +18,9 @@ pre {
   padding: 0.5em;
 }
 code {
-  font-family: 'Courier New', Courier, ui-monospace, monospace;
+  font-family: 'Noto Mono', 'Liberation Mono', 'DejaVu Sans Mono', 'Consolas', 'Ubuntu Mono', 'Courier New', Courier, ui-monospace, monospace;
+  font-size: 100%;
+  line-height: 140%;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a { 
   text-decoration: none;
@@ -69,6 +71,7 @@ dd p {
 #footer, #TOC {
   color: rgb(1, 39, 3);
   background-color: #ddffdd;
+  font-weight: bold;
 }
 
 #footer{
@@ -93,4 +96,25 @@ dd p {
   margin-left: auto;
   margin-right: auto;
   width: 15%;
+}
+
+#downloadButtons {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+button {
+  background-color: #07a715; /* Green */
+  border-radius: 15px;
+  border: 5px solid #0d770a;  color: rgb(255, 255, 255);
+  padding: 1em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  font-family: ui-sans-serif, Verdana, Helvetica, ui-sans-serif, sans-serif;
+  font-weight: bold;
+
 }
