@@ -156,24 +156,23 @@ app</a></p></li>
 href="https://docs.scala-lang.org/scala3/book/taste-repl.html">Scala
 REPL</a> using: <code>java -jar reqT.jar repl</code></p></li>
 </ul>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> java <span class="at">-jar</span> reqT.jar repl</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Welcome</span> to reqT v4.0.0</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="st">&#39;import reqt.*&#39;</span> for direct access to full api.</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="st">&#39;edit&#39;</span> to open an editor window.</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="st">&#39;help&#39;</span> for more information on how to use reqT.</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Welcome</span> to Scala 3.6.3 <span class="er">(</span><span class="ex">17.0.13,</span> Java OpenJDK 64-Bit Server VM<span class="kw">)</span><span class="bu">.</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> in expressions for evaluation. Or try :help.</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="ex">scala</span><span class="op">&gt;</span> import reqt.<span class="pp">*</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="ex">scala</span><span class="op">&gt;</span> m<span class="st">&quot;* Feature: helloWorld has Spec: print greeting&quot;</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ex">val</span> res0: reqt.Model = </span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Model</span><span class="er">(</span><span class="ex">Rel</span><span class="er">(</span><span class="ex">Ent</span><span class="er">(</span><span class="ex">Feature,helloWorld</span><span class="kw">)</span><span class="ex">,Has,</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Model</span><span class="er">(</span><span class="ex">StrAttr</span><span class="er">(</span><span class="ex">Spec,print</span> greeting<span class="kw">))))</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="ex">scala</span><span class="op">&gt;</span> </span></code></pre></div>
+<pre><code>$ java -jar reqT.jar repl
+Welcome to reqT v4.0.0
+Type &#39;import reqt.*&#39; for direct access to full api.
+Type &#39;edit&#39; to open an editor window.
+Type &#39;help&#39; for more information on how to use reqT.
+
+Welcome to Scala 3.6.3 (17.0.13, Java OpenJDK 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala&gt; import reqt.*
+
+scala&gt; m&quot;* Feature: helloWorld has Spec: print greeting&quot;
+val res0: reqt.Model = 
+  Model(Rel(Ent(Feature,helloWorld),Has,
+    Model(StrAttr(Spec,print greeting))))
+
+scala&gt; </code></pre>
 <ul>
 <li>You can use reqT as a library in Scala programs for specification
 analysis and automation. Download example below here: <a

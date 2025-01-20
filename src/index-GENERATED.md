@@ -44,7 +44,7 @@ Used at Lund University in [this course](https://cs.lth.se/krav).
 
 * Start reqT in the [Scala REPL](https://docs.scala-lang.org/scala3/book/taste-repl.html) using: `java -jar reqT.jar repl`
 
-```bash
+```
 $ java -jar reqT.jar repl
 Welcome to reqT v4.0.0
 Type 'import reqt.*' for direct access to full api.
