@@ -123,3 +123,7 @@ button {
   background-color:#0051ff;
   transition: 0.3s;
 }
+
+.button:active {
+  background-color: #b9ad00;
+}
