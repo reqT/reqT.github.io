@@ -26,6 +26,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
   text-decoration: none;
   color: #7a5ada; 
 }
+
 h1, h2, h3, h4, h5 { 
   font-weight: bold;
   border-bottom: 1px dotted black;
@@ -99,28 +100,33 @@ dd p {
 }
 
 #downloadButtons {
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 100%;
 }
 
 button {
   background-color: #07a715; /* Green */
-  border-radius: 15px;
+  border-radius: 10px;
   border: 5px solid #0d770a;  color: rgb(255, 255, 255);
-  padding: 1em 1em;
+  padding: 0.4em 0.7em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 100%;
+  font-size: 120%;
   font-family: ui-sans-serif, Verdana, Helvetica, ui-sans-serif, sans-serif;
   font-weight: bold;
 
 }
 
+button a {
+  text-decoration: none;
+  color: #ffffff; 
+}
+
 .button:hover {
-  background-color:#0051ff;
+  background-color:#37c200;
   transition: 0.3s;
 }
 

@@ -1,27 +1,29 @@
 //> using scala 3.3.4
 //> using toolkit 0.6.0
 
-//  run with: scala run . -M build
+//  run with: scala run build.scala
 
-val includeKey = "# INCLUDE "
-
-val sourceDir = "src"
+val includeKey = "%INCLUDE "
 
 extension (s: String) 
   def toProc = os.proc(s.split(" ").toSeq)
 
   def insertIncludesTo(f: String): Unit = 
-    println(s"\n    insertIncludesTo $includeKey... from $s to file $f")
-    val lines = os.read(os.pwd / sourceDir / s).split("\n")
+    println(s"\ninsertIncludesTo $includeKey... from $s to file $f\n")
+    val lines = os.read(os.pwd / os.SubPath(s)).split("\n")
     val result = 
       lines.flatMap: line =>
         if line.startsWith(includeKey) then
-          val fileToInclude = line.stripPrefix(includeKey) 
-          os.read(os.pwd / sourceDir / fileToInclude).split("\n")
+          val fileToInclude = os.SubPath(line.stripPrefix(includeKey))
+          println(s"$includeKey${os.pwd}/$fileToInclude")
+          val extraLines = os.read(os.pwd / fileToInclude).split("\n")
+          println(Console.GREEN 
+          + "lines inserted:\n" + Console.BLUE + s"${extraLines.mkString("\n")}" + Console.RESET)
+          extraLines
         else Array(line)
       .mkString("\n")
 
-    os.write.over(target = os.pwd / sourceDir / f, data = result)
+    os.write.over(target = os.pwd / os.SubPath(f), data = result)
 
   end insertIncludesTo
 
@@ -40,8 +42,8 @@ val commands = Seq(buildTop, buildFooter, buildIndex)
   import Console.{RED as redFg, GREEN as greenFg, RED_B as redBg, RESET, BLACK as blackFg}
 
   println("\n--- BUILDING reqt.github.io ---")
-  
-  "index.md".insertIncludesTo("index-GENERATED.md")
+
+  "src/index.md".insertIncludesTo("src/index-GENERATED.md")
 
   print(redBg + blackFg) 
 

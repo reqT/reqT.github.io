@@ -12,28 +12,35 @@ Used at Lund University in [this course](https://cs.lth.se/krav).
 
 ## Download
 
+Latest version: <b>
+4.4.2
+</b> &emsp; All versions: &nbsp; [reqT](https://github.com/reqT/reqT/releases) &nbsp; [reqT-lang](https://github.com/reqT/reqT-lang/releases)
+
+
 ```{=html}
 <div id="downloadButtons">
 
 <button type="button" class="button" onclick='window.location.href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar"'>
-  Desktop App
+  <a href="https://github.com/reqT/reqT/releases/latest/download/reqT.jar"> Desktop App </a>
 </button>
 
 <button type="button" class="button" onclick='window.location.href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf"'>
-  Quickref
+  <a href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf"> Quickref </a>
 </button>
 
 <button type="button" class="button" onclick='window.location.href="https://github.com/reqT"'>
-  Source Code
+  <a href="https://github.com/reqT"> Source Code </a>
 </button>
 
 <button type="button" class="button" onclick='window.location.href="https://github.com/reqT/reqT-lang/blob/main/docs/langSpec-GENERATED.md"'>
-  Language Spec
+  <a href="https://github.com/reqT/reqT-lang/blob/main/docs/langSpec-GENERATED.md"> Language Spec </a>
 </button>
 
 </div>
 
 ```
+
+
 
 ## Getting started
 * Make sure you have [Java 21](https://adoptium.net/temurin/releases/?package=jdk&version=21) and [Scala 3](https://www.scala-lang.org/download/) installed for your system. Check this in terminal using: </br>`java -version`</br>`scala -version`
@@ -44,32 +51,33 @@ Used at Lund University in [this course](https://cs.lth.se/krav).
 
 * Start reqT in the [Scala REPL](https://docs.scala-lang.org/scala3/book/taste-repl.html) using: `java -jar reqT.jar repl`
 
-```
+```scala
 $ java -jar reqT.jar repl
-Welcome to reqT v4.0.0
-Type 'import reqt.*' for direct access to full api.
-Type 'edit' to open an editor window.
-Type 'help' for more information on how to use reqT.
 
-Welcome to Scala 3.6.3 (17.0.13, Java OpenJDK 64-Bit Server VM).
+Welcome to reqT 4.4.2 https://reqT.github.io
+Type 'edit' to open a new reqT window.
+Type ':quit' or press Ctrl+D to exit.
+Re-run with -h for help on main program args
+
+scala repl -S 3.6.4-RC1 --jar reqT.jar -- --repl-init-script "import reqt.*"
+Welcome to Scala 3.6.4-RC1 (17.0.13, Java OpenJDK 64-Bit Server VM).
 Type in expressions for evaluation. Or try :help.
 
-scala> import reqt.*
-
-scala> m"* Feature: helloWorld has Spec: print greeting"
-val res0: reqt.Model = 
+scala> val helloModel = m"* Feature: helloWorld has Spec: print greeting"
+val helloModel: reqt.Model = 
   Model(Rel(Ent(Feature,helloWorld),Has,
     Model(StrAttr(Spec,print greeting))))
 
 scala> 
 ```
-* You can use reqT as a library in Scala programs for specification analysis and automation. Download example below here: [`hello-reqt.scala`](https://github.com/reqT/reqT.github.io/blob/master/src/hello-reqt.scala) and run in terminal using: `scala run hello-reqt.scala`  
+* You can use reqT as a library in Scala programs for specification analysis and automation. Download example below here: [`hello-reqt.scala`](https://github.com/reqT/reqT.github.io/blob/master/src/hello-reqt.scala) and run in terminal using: <br> `scala run hello-reqt.scala`  
 
 ```scala
-//> using scala 3.6.2
-//> using dep "reqt:reqt:4.4.0,url=https://github.com/reqT/reqT/releases/download/v4.4.0/reqT-4.4.0.jar"
+//> using scala 3.6.3
+//> using dep "reqt:reqt:4.4.1,url=https://github.com/reqT/reqT/releases/download/v4.4.1/reqT-4.4.1.jar"
 
 import reqt.*
+
 val m = Model(
     Feature("helloWorld").has(
       Spec("Print a nice greeting."),
