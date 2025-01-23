@@ -95,7 +95,9 @@ val m = Model(
 
 ## Using the reqT App
 
-* TODO: screendumps etc
+* TODO: more screendumps and explanations
+
+![reqT Main Window](img/screen1.png)
 
 ## Using reqT with Scala
 
