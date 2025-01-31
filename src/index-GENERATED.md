@@ -13,7 +13,7 @@ Used at Lund University in [this course](https://cs.lth.se/krav).
 ## Download
 
 Latest version: <b>
-4.5.7
+4.5.8
 </b> &emsp; All versions: &nbsp; [reqT](https://github.com/reqT/reqT/releases) &nbsp; [reqT-lang](https://github.com/reqT/reqT-lang/releases)
 
 
