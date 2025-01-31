@@ -54,7 +54,7 @@ Latest version: <b>
 ```scala
 $ java -jar reqT.jar repl
 
-Welcome to reqT 4.4.2 https://reqT.github.io
+Welcome to reqT 4.5.6 https://reqT.github.io
 Type 'edit' to open a new reqT window.
 Type ':quit' or press Ctrl+D to exit.
 Re-run with -h for help on main program args
