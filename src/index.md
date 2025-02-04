@@ -40,6 +40,7 @@ Latest version: <b>
 
 ```
 
+%INCLUDE src/tiny-url-download.html
 
 
 ## Getting started
