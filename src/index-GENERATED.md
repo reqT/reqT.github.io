@@ -40,6 +40,8 @@ Latest version: <b>
 
 ```
 
+<p>Latest <b>reqT.jar</b> from: <a href="https://tinyurl.com/yc4zsxy3"> tinyurl.com/yc4zsxy3</a></p>
+<pre>curl -L https://tinyurl.com/yc4zsxy3 -o reqT.jar</pre>
 
 
 ## Getting started
