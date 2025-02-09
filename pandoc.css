@@ -88,15 +88,21 @@ dd p {
 }
 
 #header {
-  text-align: left;
-  font-size: 110%;
+  background:
+    linear-gradient(
+      120deg,
+      rgb(255 255 255 / 10%) 10%,
+      rgb(0 0 0 / 100%) 100%
+    )
+    #0c6609;
 }
 
 .headimg {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 15%;
+  width: 18%;
+
 }
 
 #downloadButtons {

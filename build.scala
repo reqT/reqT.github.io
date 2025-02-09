@@ -6,7 +6,7 @@
 val includeKey = "%INCLUDE "
 
 extension (s: String) 
-  def toProc = os.proc(s.split(" ").toSeq)
+//   def toProc = os.proc(s.split(" ").toSeq)
 
   def insertIncludesTo(f: String): Unit = 
     println(s"\ninsertIncludesTo $includeKey... from $s to file $f\n")
@@ -27,14 +27,15 @@ extension (s: String)
 
   end insertIncludesTo
 
-val buildFooter = "pandoc src/footer.md -o footer.html"
+val buildFooter = Seq("pandoc", "src/footer.md", "-o", "footer.html")
 
-val buildTop = "pandoc src/top.md -o top.html"
+val buildTop = Seq("pandoc", "src/top.md", "-o", "top.html")
 
-val title = "reqT.github.io"
+val title = "reqT - requirements tool"
 
 val buildIndex  = //--metadata title=reqT 
-  s"""pandoc -s --toc -c pandoc.css -A footer.html -B top.html -H header.html --metadata title=$title src/index-GENERATED.md -o index.html"""
+  Seq("pandoc", "-s", "--toc", "-c", "pandoc.css", "-A", "footer.html", "-B", "top.html", "-H", "header.html", 
+      "--metadata", s"""title=$title""", "src/index-GENERATED.md", "-o", "index.html")
 
 val commands = Seq(buildTop, buildFooter, buildIndex)
 
@@ -49,8 +50,11 @@ val commands = Seq(buildTop, buildFooter, buildIndex)
 
   import scala.util.{Try, Failure, Success}
 
+  println("DEBUG BUILD")
+
   val results = for cmd <- commands yield cmd -> Try:
-    val result = cmd.toProc.call()
+    println(s"Running: $cmd")
+    val result = os.proc(cmd).call()
     val color = if result.exitCode == 0 then greenFg else redFg
     s"$color  $result $RESET"
   
