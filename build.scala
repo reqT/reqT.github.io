@@ -1,12 +1,11 @@
-//> using scala 3.3.4
-//> using toolkit 0.6.0
+//> using scala 3.6.3
+//> using toolkit 0.7.0
 
 //  run with: scala run build.scala
 
 val includeKey = "%INCLUDE "
 
 extension (s: String) 
-//   def toProc = os.proc(s.split(" ").toSeq)
 
   def insertIncludesTo(f: String): Unit = 
     println(s"\ninsertIncludesTo $includeKey... from $s to file $f\n")
@@ -31,7 +30,7 @@ val buildFooter = Seq("pandoc", "src/footer.md", "-o", "footer.html")
 
 val buildTop = Seq("pandoc", "src/top.md", "-o", "top.html")
 
-val title = "reqT - requirements tool"
+val title = "reqT - Requirements Engineering Tool"
 
 val buildIndex  = //--metadata title=reqT 
   Seq("pandoc", "-s", "--toc", "-c", "pandoc.css", "-A", "footer.html", "-B", "top.html", "-H", "header.html", 
@@ -46,14 +45,9 @@ val commands = Seq(buildTop, buildFooter, buildIndex)
 
   "src/index.md".insertIncludesTo("src/index-GENERATED.md")
 
-  print(redBg + blackFg) 
-
   import scala.util.{Try, Failure, Success}
 
-  println("DEBUG BUILD")
-
   val results = for cmd <- commands yield cmd -> Try:
-    println(s"Running: $cmd")
     val result = os.proc(cmd).call()
     val color = if result.exitCode == 0 then greenFg else redFg
     s"$color  $result $RESET"
