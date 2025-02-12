@@ -43,7 +43,7 @@ Latest version: <b>
 
 ```
 
-<p>Latest <b>reqT.jar</b> from: <a href="https://tinyurl.com/yc4zsxy3"> tinyurl.com/yc4zsxy3</a></p>
+<p>Latest <b>reqT.jar</b> from: <a href="https://tinyurl.com/yc4zsxy3"> tinyurl.com/get-reqT</a></p>
 <pre>curl -L https://tinyurl.com/get-reqT -o reqT.jar</pre>
 
 
