@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>reqT - requirements tool</title>
+  <title>reqT - Requirements Engineering Tool</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -95,7 +95,7 @@
 <img  src="favicon.jpg" width="100" class="headimg">
 </div>
 <header id="title-block-header">
-<h1 class="title">reqT - requirements tool</h1>
+<h1 class="title">reqT - Requirements Engineering Tool</h1>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
@@ -110,16 +110,28 @@ id="toc-using-reqt-with-scala">Using reqT with Scala</a></li>
 <li><a href="#publications" id="toc-publications">Publications</a></li>
 </ul>
 </nav>
-<p><strong>reqT</strong> is an open source tool for developers based on
-<strong>reqT-lang</strong>, a flexible modelling language with essential
-requirements engineering concepts, enabling specification analysis and
-automation.</p>
-<pre><code>* Feature: helloWorld has 
-  * Spec: Print a nice greeting.
-  * Why: First step to get started.</code></pre>
-<p>Maintainer: <a href="https://cs.lth.se/bjorn-regnell">Prof. Björn
-Regnell</a>. Used at Lund University in <a
-href="https://cs.lth.se/krav">this course</a>.</p>
+<p><strong>reqT</strong> is an open source requirements engineering tool
+for software developers based on <strong>reqT-lang</strong>, a flexible
+requirements modelling language with essential requirements engineering
+concepts, giving structure to natural language requirements, while
+enabling analysis, visualization and automation.</p>
+<p>The <strong>reqT-lang syntax</strong> is a subset of Markdown using
+bullet lists with indentation and special keywords mixed with natural
+language to give structure by connecting <em>entities</em> such as a
+<span class="EntType">Feature</span> with relations such as <span
+class="RelType">has</span> with attributes such as <span
+class="StrAttrType">Spec</span>, as in the example below:</p>
+<pre><code>* <span class="EntType">Feature</span>: helloWorld <span class="RelType">has</span> 
+  * <span class="StrAttrType">Spec</span>: Print a nice greeting.
+  * <span class="StrAttrType">Why</span>: First step to get started.
+</code></pre>
+<p>See the
+<a href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf"><strong>Quickref</strong></a>
+to explore reqT keywords covering essential requirements engineering
+concepts.</p>
+<p>Maintainer of reqT: <a
+href="https://cs.lth.se/bjorn-regnell">Prof. Björn Regnell</a>. Used at
+Lund University in <a href="https://cs.lth.se/krav">this course</a>.</p>
 <h2 id="download">Download</h2>
 <p>Latest version: <b> 4.6.1 </b>   All versions:   <a
 href="https://github.com/reqT/reqT/releases">reqT</a>   <a
@@ -166,24 +178,24 @@ app</a></p></li>
 href="https://docs.scala-lang.org/scala3/book/taste-repl.html">Scala
 REPL</a> using: <code>java -jar reqT.jar repl</code></p></li>
 </ul>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode scala"><code class="sourceCode scala"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>$ java <span class="op">-</span>jar reqT<span class="op">.</span>jar repl</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Welcome to reqT <span class="dv">4</span><span class="op">.</span><span class="fl">5.6</span> https<span class="op">:</span><span class="co">//reqT.github.io</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="er">&#39;</span>edit<span class="er">&#39;</span> to open a <span class="kw">new</span> reqT window<span class="op">.</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="er">&#39;</span><span class="op">:</span>quit<span class="er">&#39;</span> or press Ctrl<span class="op">+</span>D to exit<span class="op">.</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>Re<span class="op">-</span>run <span class="kw">with</span> <span class="op">-</span>h <span class="cf">for</span> help on main program args</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>scala repl <span class="op">-</span>S <span class="dv">3</span><span class="op">.</span><span class="fl">6.4</span><span class="op">-</span>RC1 <span class="op">--</span>jar reqT<span class="op">.</span>jar <span class="op">--</span> <span class="op">--</span>repl<span class="op">-</span>init<span class="op">-</span>script <span class="st">&quot;import reqt.*&quot;</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>Welcome to Scala <span class="dv">3</span><span class="op">.</span><span class="fl">6.4</span><span class="op">-</span><span class="fu">RC1</span> <span class="op">(</span><span class="dv">17</span><span class="op">.</span><span class="fl">0.13</span><span class="op">,</span> Java OpenJDK <span class="dv">64</span><span class="op">-</span>Bit Server VM<span class="op">).</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> in expressions <span class="cf">for</span> evaluation<span class="op">.</span> Or <span class="cf">try</span> <span class="op">:</span>help<span class="op">.</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>scala<span class="op">&gt;</span> <span class="kw">val</span> helloModel <span class="op">=</span> m<span class="st">&quot;* Feature: helloWorld has Spec: print greeting&quot;</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="kw">val</span> helloModel<span class="op">:</span> reqt<span class="op">.</span>Model <span class="op">=</span> </span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Model</span><span class="op">(</span><span class="fu">Rel</span><span class="op">(</span><span class="fu">Ent</span><span class="op">(</span>Feature<span class="op">,</span>helloWorld<span class="op">),</span>Has<span class="op">,</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Model</span><span class="op">(</span><span class="fu">StrAttr</span><span class="op">(</span>Spec<span class="op">,</span>print greeting<span class="op">))))</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>scala<span class="op">&gt;</span> </span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode scala"><code class="sourceCode scala"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>$ java <span class="op">-</span>jar reqT<span class="op">.</span>jar repl</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Welcome to reqT <span class="dv">4</span><span class="op">.</span><span class="fl">5.6</span> https<span class="op">:</span><span class="co">//reqT.github.io</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="er">&#39;</span>edit<span class="er">&#39;</span> to open a <span class="kw">new</span> reqT window<span class="op">.</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="er">&#39;</span><span class="op">:</span>quit<span class="er">&#39;</span> or press Ctrl<span class="op">+</span>D to exit<span class="op">.</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Re<span class="op">-</span>run <span class="kw">with</span> <span class="op">-</span>h <span class="cf">for</span> help on main program args</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>scala repl <span class="op">-</span>S <span class="dv">3</span><span class="op">.</span><span class="fl">6.4</span><span class="op">-</span>RC1 <span class="op">--</span>jar reqT<span class="op">.</span>jar <span class="op">--</span> <span class="op">--</span>repl<span class="op">-</span>init<span class="op">-</span>script <span class="st">&quot;import reqt.*&quot;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Welcome to Scala <span class="dv">3</span><span class="op">.</span><span class="fl">6.4</span><span class="op">-</span><span class="fu">RC1</span> <span class="op">(</span><span class="dv">17</span><span class="op">.</span><span class="fl">0.13</span><span class="op">,</span> Java OpenJDK <span class="dv">64</span><span class="op">-</span>Bit Server VM<span class="op">).</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> in expressions <span class="cf">for</span> evaluation<span class="op">.</span> Or <span class="cf">try</span> <span class="op">:</span>help<span class="op">.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>scala<span class="op">&gt;</span> <span class="kw">val</span> helloModel <span class="op">=</span> m<span class="st">&quot;* Feature: helloWorld has Spec: print greeting&quot;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">val</span> helloModel<span class="op">:</span> reqt<span class="op">.</span>Model <span class="op">=</span> </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Model</span><span class="op">(</span><span class="fu">Rel</span><span class="op">(</span><span class="fu">Ent</span><span class="op">(</span>Feature<span class="op">,</span>helloWorld<span class="op">),</span>Has<span class="op">,</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Model</span><span class="op">(</span><span class="fu">StrAttr</span><span class="op">(</span>Spec<span class="op">,</span>print greeting<span class="op">))))</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>scala<span class="op">&gt;</span> </span></code></pre></div>
 <ul>
 <li>You can use reqT as a library in Scala programs for specification
 analysis and automation. Download example below here: <a
@@ -191,21 +203,21 @@ href="https://github.com/reqT/reqT.github.io/blob/master/src/hello-reqt.scala"><
 and run in terminal using: <br>
 <code>scala run hello-reqt.scala</code></li>
 </ul>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode scala"><code class="sourceCode scala"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">//&gt; using scala 3.6.3</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">//&gt; using dep &quot;reqt:reqt:4.4.1,url=https://github.com/reqT/reqT/releases/download/v4.4.1/reqT-4.4.1.jar&quot;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> reqt<span class="op">.*</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="kw">val</span> m <span class="op">=</span> <span class="fu">Model</span><span class="op">(</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Feature</span><span class="op">(</span><span class="st">&quot;helloWorld&quot;</span><span class="op">).</span><span class="fu">has</span><span class="op">(</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Spec</span><span class="op">(</span><span class="st">&quot;Print a nice greeting.&quot;</span><span class="op">),</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Why</span><span class="op">(</span><span class="st">&quot;First step to get started.&quot;</span><span class="op">),</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">)</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="op">)</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>@main <span class="kw">def</span> hello <span class="op">=</span> </span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">println</span><span class="op">(</span>m<span class="op">.</span>toMarkdown<span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode scala"><code class="sourceCode scala"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">//&gt; using scala 3.6.3</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">//&gt; using dep &quot;reqt:reqt:4.4.1,url=https://github.com/reqT/reqT/releases/download/v4.4.1/reqT-4.4.1.jar&quot;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> reqt<span class="op">.*</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">val</span> m <span class="op">=</span> <span class="fu">Model</span><span class="op">(</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Feature</span><span class="op">(</span><span class="st">&quot;helloWorld&quot;</span><span class="op">).</span><span class="fu">has</span><span class="op">(</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Spec</span><span class="op">(</span><span class="st">&quot;Print a nice greeting.&quot;</span><span class="op">),</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Why</span><span class="op">(</span><span class="st">&quot;First step to get started.&quot;</span><span class="op">),</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">)</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="op">)</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>@main <span class="kw">def</span> hello <span class="op">=</span> </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">println</span><span class="op">(</span>m<span class="op">.</span>toMarkdown<span class="op">)</span></span></code></pre></div>
 <h2 id="why-reqt">Why reqT?</h2>
 <ul>
 <li>TODO: add rationale for requirements as code from old site here: <a

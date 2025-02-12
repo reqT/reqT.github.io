@@ -89,12 +89,7 @@ dd p {
 
 #header {
   background:
-    linear-gradient(
-      120deg,
-      rgb(255 255 255 / 10%) 10%,
-      rgb(0 0 0 / 100%) 100%
-    )
-    #0c6609;
+  linear-gradient(to right, black,#07a715,black); 
 }
 
 .headimg {
@@ -139,3 +134,13 @@ button a {
 .button:active {
   background-color: #e4d500;
 }
+
+span.EntType     {color:rgb(0,100,200);font-weight:bold;}
+span.StrAttrType {color:rgb(180,100,40);font-weight:bold;font-style: italic;}
+span.IntAttrType {color:rgb(0,120,50);font-weight:bold;font-style: italic;}
+span.RelType     {color:rgb(160,0,30);font-weight:bold;font-style: italic;text-decoration-line: underline;}
+.EntType {
+  font-weight: bold;
+  color: blue;
+}
+
