@@ -1,6 +1,6 @@
 **reqT** is an open source requirements engineering tool for software developers based on **reqT-lang**, a flexible requirements modelling language with essential requirements engineering concepts, giving structure to natural language requirements, while enabling analysis, visualization and automation. 
 
-The **reqT-lang syntax** is a subset of Markdown using bullet lists with indentation and special keywords to give structure to natural language by connecting *entities*, such as a <span class="EntType">Feature</span>, with *relations*, such as <span class="RelType">has</span>, to *attributes*, such as <span class="StrAttrType">Spec</span>, as in the example below:
+The **reqT-lang syntax** is a subset of Markdown using bullet lists with indentation and special keywords to express textual requirements models by connecting *entities*, such as a <span class="EntType">Feature</span>, with *relations*, such as <span class="RelType">has</span>, to *attributes*, such as <span class="StrAttrType">Spec</span>, as in the example below:
 
 <pre><code>* <span class="EntType">Feature</span>: helloWorld <span class="RelType">has</span> 
   * <span class="StrAttrType">Spec</span>: Print a nice greeting.
