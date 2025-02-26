@@ -73,7 +73,11 @@ val m: reqt.Model =
   Model(Rel(Ent(Feature,helloWorld),Has,
     Model(StrAttr(Spec,print greeting))))
 
-scala> 
+scala> println(m.show)
+Model(
+  Feature("helloWorld") has Spec("print greeting"),
+)
+
 ```
 * You can use reqT as a library in Scala programs for specification analysis and automation. Download example below here: [`hello-reqt.scala`](https://github.com/reqT/reqT.github.io/blob/master/src/hello-reqt.scala) and run in terminal using: <br> `scala run hello-reqt.scala`  
 
