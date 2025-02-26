@@ -178,27 +178,27 @@ app</a></p></li>
 href="https://docs.scala-lang.org/scala3/book/taste-repl.html">Scala
 REPL</a> using: <code>java -jar reqT.jar repl</code></p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode scala"><code class="sourceCode scala"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>$ java <span class="op">-</span>jar reqT<span class="op">.</span>jar repl</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Welcome to reqT <span class="dv">4</span><span class="op">.</span><span class="fl">5.6</span> https<span class="op">:</span><span class="co">//reqT.github.io</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="er">&#39;</span>edit<span class="er">&#39;</span> to open a <span class="kw">new</span> reqT window<span class="op">.</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> <span class="er">&#39;</span><span class="op">:</span>quit<span class="er">&#39;</span> or press Ctrl<span class="op">+</span>D to exit<span class="op">.</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Re<span class="op">-</span>run <span class="kw">with</span> <span class="op">-</span>h <span class="cf">for</span> help on main program args</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>scala repl <span class="op">-</span>S <span class="dv">3</span><span class="op">.</span><span class="fl">6.4</span><span class="op">-</span>RC1 <span class="op">--</span>jar reqT<span class="op">.</span>jar <span class="op">--</span> <span class="op">--</span>repl<span class="op">-</span>init<span class="op">-</span>script <span class="st">&quot;import reqt.*&quot;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Welcome to Scala <span class="dv">3</span><span class="op">.</span><span class="fl">6.4</span><span class="op">-</span><span class="fu">RC1</span> <span class="op">(</span><span class="dv">17</span><span class="op">.</span><span class="fl">0.13</span><span class="op">,</span> Java OpenJDK <span class="dv">64</span><span class="op">-</span>Bit Server VM<span class="op">).</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Type</span> in expressions <span class="cf">for</span> evaluation<span class="op">.</span> Or <span class="cf">try</span> <span class="op">:</span>help<span class="op">.</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>scala<span class="op">&gt;</span> <span class="kw">val</span> m <span class="op">=</span> <span class="st">&quot;* Feature: helloWorld has Spec: print greeting&quot;</span><span class="op">.</span>toModel</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">val</span> m<span class="op">:</span> reqt<span class="op">.</span>Model <span class="op">=</span> </span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Model</span><span class="op">(</span><span class="fu">Rel</span><span class="op">(</span><span class="fu">Ent</span><span class="op">(</span>Feature<span class="op">,</span>helloWorld<span class="op">),</span>Has<span class="op">,</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Model</span><span class="op">(</span><span class="fu">StrAttr</span><span class="op">(</span>Spec<span class="op">,</span>print greeting<span class="op">))))</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>scala<span class="op">&gt;</span> <span class="fu">println</span><span class="op">(</span>m<span class="op">.</span>show<span class="op">)</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">Model</span><span class="op">(</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Feature</span><span class="op">(</span><span class="st">&quot;helloWorld&quot;</span><span class="op">)</span> has <span class="fu">Spec</span><span class="op">(</span><span class="st">&quot;print greeting&quot;</span><span class="op">),</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="op">)</span></span></code></pre></div>
+<pre><code>$ java -jar reqT.jar repl
+
+Welcome to reqT 4.5.6 https://reqT.github.io
+Type &#39;edit&#39; to open a new reqT window.
+Type &#39;:quit&#39; or press Ctrl+D to exit.
+Re-run with -h for help on main program args
+
+scala repl -S 3.6.4-RC1 --jar reqT.jar -- --repl-init-script &quot;import reqt.*&quot;
+Welcome to Scala 3.6.4-RC1 (17.0.13, Java OpenJDK 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala&gt; val m = &quot;* Feature: helloWorld has Spec: print greeting&quot;.toModel
+val m: reqt.Model = 
+  Model(Rel(Ent(Feature,helloWorld),Has,
+    Model(StrAttr(Spec,print greeting))))
+
+scala&gt; println(m.show)
+Model(
+  Feature(&quot;helloWorld&quot;) has Spec(&quot;print greeting&quot;),
+)
+</code></pre>
 <ul>
 <li>You can use reqT as a library in Scala programs for specification
 analysis and automation. Download example below here: <a

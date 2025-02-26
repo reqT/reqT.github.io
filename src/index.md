@@ -55,7 +55,7 @@ Latest version: <b>
 
 * Start reqT in the [Scala REPL](https://docs.scala-lang.org/scala3/book/taste-repl.html) using: `java -jar reqT.jar repl`
 
-```scala
+```
 $ java -jar reqT.jar repl
 
 Welcome to reqT 4.5.6 https://reqT.github.io
