@@ -68,8 +68,8 @@ scala repl -S 3.6.4-RC1 --jar reqT.jar -- --repl-init-script "import reqt.*"
 Welcome to Scala 3.6.4-RC1 (17.0.13, Java OpenJDK 64-Bit Server VM).
 Type in expressions for evaluation. Or try :help.
 
-scala> val helloModel = m"* Feature: helloWorld has Spec: print greeting"
-val helloModel: reqt.Model = 
+scala> val m = "* Feature: helloWorld has Spec: print greeting".toModel
+val m: reqt.Model = 
   Model(Rel(Ent(Feature,helloWorld),Has,
     Model(StrAttr(Spec,print greeting))))
 
