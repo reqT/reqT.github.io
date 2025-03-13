@@ -203,10 +203,10 @@ object quizMaker:
   lazy val entityConceptGroups: ArraySeq[((EntGroup,String),String)] = ArraySeq(
     ContextEnt -> "Actor" -> "A role played by a user or external system that interacts with the system (product, app, or service) under development.",
     ContextEnt -> "App" -> "A computer program, or group of programs designed for end users, normally with a graphical user interface. Short for application.",
-    ContextEnt -> "Domain" -> "The application area of a product with its surrounding entities, e.g. users or other systems.",
-    ContextEnt -> "Product" -> "An artifact offered to users or customers, e.g. an app, service or  embedded system.",
+    ContextEnt -> "Domain" -> "The application area of a product with its surrounding entities, such as users or other systems.",
+    ContextEnt -> "Product" -> "An artifact offered to users or customers, such as an app, service or  embedded system.",
     ContextEnt -> "Release" -> "A specific version of a product offered to end users at a specific time.",
-    ContextEnt -> "Resource" -> "A capability of, or support for product development, e.g. a development team or some testing equipment.",
+    ContextEnt -> "Resource" -> "A capability of, or support for product development, such as a development team or some testing equipment.",
     ContextEnt -> "Risk" -> "Something negative that may happen.",
     ContextEnt -> "Scenario" -> "A narrative of foreseeable interactions of user roles (actors) and the system (product, app, or service) under development..",
     ContextEnt -> "Service" -> "System use that provides value to stakeholders. System actions that stakeholders are willing to pay for.",
