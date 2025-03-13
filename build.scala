@@ -36,10 +36,12 @@ val buildIndex  = //--metadata title=reqT
   Seq("pandoc", "-s", "--toc", "-c", "pandoc.css", "-A", "footer.html", "-B", "top.html", "-H", "header.html", 
       "--metadata", s"""title=$title""", "src/index-GENERATED.md", "-o", "index.html")
 
-val buildQuiz =
-  Seq("pandoc", "-s", "-c", "../pandoc.css", "--metadata", "title=Quiz", "quiz/src/index.md", "-o", "quiz/index.html")
+val buildQuizJS = Seq("scala", "package", "quiz/src/quiz.scala", "--js-dom", "-o", "quiz/quiz.js", "-f")
 
-val commands = Seq(buildTop, buildFooter, buildIndex, buildQuiz)
+val buildQuizPage =
+  Seq("pandoc", "-s", "-c", "../pandoc.css", "-H", "quiz/header.html", "--metadata", "title=reqT Quiz", "quiz/src/index.md", "-o", "quiz/index.html")
+
+val commands = Seq(buildTop, buildFooter, buildIndex, buildQuizJS, buildQuizPage)
 
 @main def build = // https://pandoc.org/demos.html
   import Console.{RED as redFg, GREEN as greenFg, RED_B as redBg, RESET, BLACK as blackFg}
@@ -51,7 +53,7 @@ val commands = Seq(buildTop, buildFooter, buildIndex, buildQuiz)
   import scala.util.{Try, Failure, Success}
 
   val results = for cmd <- commands yield cmd -> Try:
-    val result = os.proc(cmd).call()
+    val result = os.proc(cmd).call(stdin = os.Inherit, stdout = os.Inherit, stderr = os.Inherit)
     val color = if result.exitCode == 0 then greenFg else redFg
     s"$color  $result $RESET"
   

@@ -5,9 +5,15 @@ reqT project web pages at https://reqt.github.io/
 
 ## How to build
 
-Make sure you have [`scala`](https://www.scala-lang.org/) and [`pandoc`](https://pandoc.org/) on path.
+Make sure you have [`scala`](https://www.scala-lang.org/) and [`pandoc`](https://pandoc.org/) and [`node`](https://nodejs.org/en/download) on path.
 
-Build everything with: `scala run . -M build`
+If you get `Error: Cannot find module 'jsdom'` then issue [these commands](https://scala-cli.virtuslab.org/docs/guides/advanced/scala-js/#scalajs-dom-support):
+```
+npm init private
+npm install jsdom
+```
+
+Build everything with: `scala run build.scala`
 
 ## How to run
 
