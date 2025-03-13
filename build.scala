@@ -36,7 +36,7 @@ val buildIndex  = //--metadata title=reqT
   Seq("pandoc", "-s", "--toc", "-c", "pandoc.css", "-A", "footer.html", "-B", "top.html", "-H", "header.html", 
       "--metadata", s"""title=$title""", "src/index-GENERATED.md", "-o", "index.html")
 
-val buildQuizJS = Seq("scala", "package", "quiz/src/quiz.scala", "--js-dom", "-o", "quiz/quiz.js", "-f")
+val buildQuizJS = Seq("scala", "--power", "package", "quiz/src/quiz.scala", "--js-dom", "-o", "quiz/quiz.js", "-f")
 
 val buildQuizPage =
   Seq("pandoc", "-s", "-c", "../pandoc.css", "-H", "quiz/header.html", "--metadata", "title=reqT Quiz", "quiz/src/index.md", "-o", "quiz/index.html")
