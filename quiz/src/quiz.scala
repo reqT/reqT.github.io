@@ -93,6 +93,7 @@ def setupUI(): Unit =
   val quest = Document.appendDynamicContainer(id = "quest")
 
   val info = Document.appendText(quest, "p", "Press abcde in right order")
+  info.id = "quest"
 
   val reply = Document.appendDynamicContainer(id = "reply")
 
@@ -108,7 +109,6 @@ def setupUI(): Unit =
   val result = Document.appendDynamicContainer(id = "result")
 
   showPara.innerText = "5 letters left abcde"
-
 
   inp.focus()
 

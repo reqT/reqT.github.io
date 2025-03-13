@@ -1892,7 +1892,8 @@ $c_Lquiz$package$.prototype.setupUI__V = (function() {
     $m_Lquiz$package$().answer__Lorg_scalajs_dom_HTMLInputElement().focus();
   })));
   var quest = $m_LDocument$().appendDynamicContainer__T__Lorg_scalajs_dom_Node__Lorg_scalajs_dom_Element("quest", $m_LDocument$().appendDynamicContainer$default$2__Lorg_scalajs_dom_Node());
-  $m_LDocument$().appendText__Lorg_scalajs_dom_Node__T__T__Lorg_scalajs_dom_Element(quest, "p", "Press abcde in right order");
+  var info = $m_LDocument$().appendText__Lorg_scalajs_dom_Node__T__T__Lorg_scalajs_dom_Element(quest, "p", "Press abcde in right order");
+  info.id = "quest";
   var reply = $m_LDocument$().appendDynamicContainer__T__Lorg_scalajs_dom_Node__Lorg_scalajs_dom_Element("reply", $m_LDocument$().appendDynamicContainer$default$2__Lorg_scalajs_dom_Node());
   var inp = $m_LDocument$().appendInput__Lorg_scalajs_dom_Node__T__T__Z__F0__Lorg_scalajs_dom_HTMLInputElement(reply, "type abcde in right order", "answer", false, new $c_sjsr_AnonFunction0((() => {
     var x = ("inp changed to " + $as_T($m_Lquiz$package$().answer__Lorg_scalajs_dom_HTMLInputElement().value));
