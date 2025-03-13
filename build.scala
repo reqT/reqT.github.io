@@ -37,7 +37,7 @@ val buildIndex  = //--metadata title=reqT
       "--metadata", s"""title=$title""", "src/index-GENERATED.md", "-o", "index.html")
 
 val buildQuiz =
-  s"""pandoc -s -c pandoc.css --metadata title=Quiz quiz/src/index.md -o quiz/index.html"""
+  Seq("pandoc", "-s", "-c", "../pandoc.css", "--metadata", "title=Quiz", "quiz/src/index.md", "-o", "quiz/index.html")
 
 val commands = Seq(buildTop, buildFooter, buildIndex, buildQuiz)
 
