@@ -81,18 +81,19 @@ object Document:
     val containerElement = appendDynamicContainer()
     appendText(containerElement, "h1", "Oops! Page not found.")
 
+val initLetters = "5 missing letters abcde"
 
 def setupUI(): Unit = 
 
   val but = Document.appendButton(document.body, "New quiz"):
     println("quiz button pressed again")
     answer.value = ""
-    showPara.innerText = "5 letters left abcde"
+    showPara.innerText = initLetters
     answer.focus()
 
   val quest = Document.appendDynamicContainer(id = "quest")
 
-  val info = Document.appendText(quest, "p", "Press abcde in right order")
+  val info = Document.appendText(quest, "p", "TODO: Feature Bla bla bla.")
   info.id = "quest"
 
   val reply = Document.appendDynamicContainer(id = "reply")
@@ -101,14 +102,14 @@ def setupUI(): Unit =
     println(s"inp changed to ${answer.value}")
     answer.value = answer.value.toLowerCase.filter(c => "abcde".contains(c)).distinct
     def lettersLeft: Int = 5 - answer.value.length
-    showPara.innerText = lettersLeft.toString + " letters left " + ("abcde".diff(answer.value))
+    showPara.innerText = lettersLeft.toString + " missing letters " + ("abcde".diff(answer.value))
     if lettersLeft == 0 then
-      showPara.innerText = "Correct answer: ?"
+      showPara.innerText = "Correct: ? out of 5"
     
 
   val result = Document.appendDynamicContainer(id = "result")
 
-  showPara.innerText = "5 letters left abcde"
+  showPara.innerText = initLetters
 
   inp.focus()
 

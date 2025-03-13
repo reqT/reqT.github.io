@@ -1875,6 +1875,8 @@ function $p_Lquiz$package$__lettersLeft$1__I($thiz) {
 }
 /** @constructor */
 function $c_Lquiz$package$() {
+  this.Lquiz$package$__f_initLetters = null;
+  this.Lquiz$package$__f_initLetters = "5 missing letters abcde";
 }
 $c_Lquiz$package$.prototype = new $h_O();
 $c_Lquiz$package$.prototype.constructor = $c_Lquiz$package$;
@@ -1888,11 +1890,11 @@ $c_Lquiz$package$.prototype.setupUI__V = (function() {
     var this$3 = $n(this$2.out__Ljava_io_PrintStream());
     this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("quiz button pressed again\n");
     $m_Lquiz$package$().answer__Lorg_scalajs_dom_HTMLInputElement().value = "";
-    $m_Lquiz$package$().showPara__Lorg_scalajs_dom_HTMLParagraphElement().innerText = "5 letters left abcde";
+    $m_Lquiz$package$().showPara__Lorg_scalajs_dom_HTMLParagraphElement().innerText = "5 missing letters abcde";
     $m_Lquiz$package$().answer__Lorg_scalajs_dom_HTMLInputElement().focus();
   })));
   var quest = $m_LDocument$().appendDynamicContainer__T__Lorg_scalajs_dom_Node__Lorg_scalajs_dom_Element("quest", $m_LDocument$().appendDynamicContainer$default$2__Lorg_scalajs_dom_Node());
-  var info = $m_LDocument$().appendText__Lorg_scalajs_dom_Node__T__T__Lorg_scalajs_dom_Element(quest, "p", "Press abcde in right order");
+  var info = $m_LDocument$().appendText__Lorg_scalajs_dom_Node__T__T__Lorg_scalajs_dom_Element(quest, "p", "Feature Bla bla bla.");
   info.id = "quest";
   var reply = $m_LDocument$().appendDynamicContainer__T__Lorg_scalajs_dom_Node__Lorg_scalajs_dom_Element("reply", $m_LDocument$().appendDynamicContainer$default$2__Lorg_scalajs_dom_Node());
   var inp = $m_LDocument$().appendInput__Lorg_scalajs_dom_Node__T__T__Z__F0__Lorg_scalajs_dom_HTMLInputElement(reply, "type abcde in right order", "answer", false, new $c_sjsr_AnonFunction0((() => {
@@ -1922,13 +1924,13 @@ $c_Lquiz$package$.prototype.setupUI__V = (function() {
     $x_2.value = $x_1.distinct$extension__T__T(x$3);
     var $x_3 = $m_Lquiz$package$().showPara__Lorg_scalajs_dom_HTMLParagraphElement();
     var this$16 = $p_Lquiz$package$__lettersLeft$1__I(this);
-    $x_3.innerText = ((("" + this$16) + " letters left ") + $m_sc_StringOps$().diff$extension__T__sc_Seq__T("abcde", $m_s_Predef$().wrapString__T__sci_WrappedString($as_T($m_Lquiz$package$().answer__Lorg_scalajs_dom_HTMLInputElement().value))));
+    $x_3.innerText = ((("" + this$16) + " missing letters ") + $m_sc_StringOps$().diff$extension__T__sc_Seq__T("abcde", $m_s_Predef$().wrapString__T__sci_WrappedString($as_T($m_Lquiz$package$().answer__Lorg_scalajs_dom_HTMLInputElement().value))));
     if (($p_Lquiz$package$__lettersLeft$1__I(this) === 0)) {
-      $m_Lquiz$package$().showPara__Lorg_scalajs_dom_HTMLParagraphElement().innerText = "Correct answer: ?";
+      $m_Lquiz$package$().showPara__Lorg_scalajs_dom_HTMLParagraphElement().innerText = "Correct: ? out of 5";
     }
   })));
   $m_LDocument$().appendDynamicContainer__T__Lorg_scalajs_dom_Node__Lorg_scalajs_dom_Element("result", $m_LDocument$().appendDynamicContainer$default$2__Lorg_scalajs_dom_Node());
-  $m_Lquiz$package$().showPara__Lorg_scalajs_dom_HTMLParagraphElement().innerText = "5 letters left abcde";
+  $m_Lquiz$package$().showPara__Lorg_scalajs_dom_HTMLParagraphElement().innerText = "5 missing letters abcde";
   inp.focus();
 });
 $c_Lquiz$package$.prototype.showPara__Lorg_scalajs_dom_HTMLParagraphElement = (function() {

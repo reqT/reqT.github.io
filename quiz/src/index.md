@@ -2,7 +2,7 @@ Test your knowledge of entities in the reqT metamodel.
 
 <style>
 input {
-      font-size: 100%;
+      font-size: 120%;
       font-weight: bold;
       padding-top: 0.2em;
       padding-bottom: 0.2em;
