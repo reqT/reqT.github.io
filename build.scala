@@ -36,7 +36,10 @@ val title = "reqT.github.io"
 val buildIndex  = //--metadata title=reqT 
   s"""pandoc -s --toc -c pandoc.css -A footer.html -B top.html -H header.html --metadata title=$title src/index-GENERATED.md -o index.html"""
 
-val commands = Seq(buildTop, buildFooter, buildIndex)
+val buildQuiz =
+  s"""pandoc -s -c pandoc.css --metadata title=Quiz quiz/src/index.md -o quiz/index.html"""
+
+val commands = Seq(buildTop, buildFooter, buildIndex, buildQuiz)
 
 @main def build = // https://pandoc.org/demos.html
   import Console.{RED as redFg, GREEN as greenFg, RED_B as redBg, RESET, BLACK as blackFg}
