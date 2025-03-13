@@ -1,12 +1,15 @@
-**reqT** is an open source tool for developers based on **reqT-lang**, a flexible modelling language with essential requirements engineering concepts, enabling specification analysis and automation. 
+**reqT** is an open source requirements engineering tool for software developers based on **reqT-lang**, a flexible requirements modelling language with essential requirements engineering concepts, giving structure to natural language requirements, while enabling analysis, visualization and automation. 
 
-```
-* Feature: helloWorld has 
-  * Spec: Print a nice greeting.
-  * Why: First step to get started.
-```
+The **reqT-lang syntax** is a subset of Markdown using bullet lists with indentation and special keywords to express textual requirements models by connecting *entities*, such as a <span class="EntType">Feature</span>, with *relations*, such as <span class="RelType">has</span>, to *attributes*, such as <span class="StrAttrType">Spec</span>, as in the example below:
 
-Maintainer: [Prof. Björn Regnell](https://cs.lth.se/bjorn-regnell). 
+<pre><code>* <span class="EntType">Feature</span>: helloWorld <span class="RelType">has</span> 
+  * <span class="StrAttrType">Spec</span>: Print a nice greeting.
+  * <span class="StrAttrType">Why</span>: First step to get started.
+</code></pre>
+
+See the <a href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf">**Quickref**</a> to explore reqT keywords covering essential requirements engineering concepts.
+
+Maintainer of reqT: [Prof. Björn Regnell](https://cs.lth.se/bjorn-regnell). 
 Used at Lund University in [this course](https://cs.lth.se/krav). 
 
 
@@ -52,7 +55,7 @@ Latest version: <b>
 
 * Start reqT in the [Scala REPL](https://docs.scala-lang.org/scala3/book/taste-repl.html) using: `java -jar reqT.jar repl`
 
-```scala
+```
 $ java -jar reqT.jar repl
 
 Welcome to reqT 4.5.6 https://reqT.github.io
@@ -64,12 +67,16 @@ scala repl -S 3.6.4-RC1 --jar reqT.jar -- --repl-init-script "import reqt.*"
 Welcome to Scala 3.6.4-RC1 (17.0.13, Java OpenJDK 64-Bit Server VM).
 Type in expressions for evaluation. Or try :help.
 
-scala> val helloModel = m"* Feature: helloWorld has Spec: print greeting"
-val helloModel: reqt.Model = 
+scala> val m = "* Feature: helloWorld has Spec: print greeting".toModel
+val m: reqt.Model = 
   Model(Rel(Ent(Feature,helloWorld),Has,
     Model(StrAttr(Spec,print greeting))))
 
-scala> 
+scala> println(m.show)
+Model(
+  Feature("helloWorld") has Spec("print greeting"),
+)
+
 ```
 * You can use reqT as a library in Scala programs for specification analysis and automation. Download example below here: [`hello-reqt.scala`](https://github.com/reqT/reqT.github.io/blob/master/src/hello-reqt.scala) and run in terminal using: <br> `scala run hello-reqt.scala`  
 

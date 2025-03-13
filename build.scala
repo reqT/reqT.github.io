@@ -1,12 +1,11 @@
-//> using scala 3.3.4
-//> using toolkit 0.6.0
+//> using scala 3.6.3
+//> using toolkit 0.7.0
 
 //  run with: scala run build.scala
 
 val includeKey = "%INCLUDE "
 
 extension (s: String) 
-  def toProc = os.proc(s.split(" ").toSeq)
 
   def insertIncludesTo(f: String): Unit = 
     println(s"\ninsertIncludesTo $includeKey... from $s to file $f\n")
@@ -27,14 +26,15 @@ extension (s: String)
 
   end insertIncludesTo
 
-val buildFooter = "pandoc src/footer.md -o footer.html"
+val buildFooter = Seq("pandoc", "src/footer.md", "-o", "footer.html")
 
-val buildTop = "pandoc src/top.md -o top.html"
+val buildTop = Seq("pandoc", "src/top.md", "-o", "top.html")
 
-val title = "reqT.github.io"
+val title = "reqT - Requirements Engineering Tool"
 
 val buildIndex  = //--metadata title=reqT 
-  s"""pandoc -s --toc -c pandoc.css -A footer.html -B top.html -H header.html --metadata title=$title src/index-GENERATED.md -o index.html"""
+  Seq("pandoc", "-s", "--toc", "-c", "pandoc.css", "-A", "footer.html", "-B", "top.html", "-H", "header.html", 
+      "--metadata", s"""title=$title""", "src/index-GENERATED.md", "-o", "index.html")
 
 val buildQuiz =
   s"""pandoc -s -c pandoc.css --metadata title=Quiz quiz/src/index.md -o quiz/index.html"""
@@ -48,12 +48,10 @@ val commands = Seq(buildTop, buildFooter, buildIndex, buildQuiz)
 
   "src/index.md".insertIncludesTo("src/index-GENERATED.md")
 
-  print(redBg + blackFg) 
-
   import scala.util.{Try, Failure, Success}
 
   val results = for cmd <- commands yield cmd -> Try:
-    val result = cmd.toProc.call()
+    val result = os.proc(cmd).call()
     val color = if result.exitCode == 0 then greenFg else redFg
     s"$color  $result $RESET"
   
