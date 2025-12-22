@@ -1,5 +1,5 @@
-//> using scala 3.6.3
-//> using dep "reqt:reqt:4.4.1,url=https://github.com/reqT/reqT/releases/download/v4.4.1/reqT-4.4.1.jar"
+//> using scala 3.6.4
+//> using dep "reqt:reqt:4.6.3,url=https://github.com/reqT/reqT/releases/download/v4.6.3/reqT-4.6.3.jar"
 
 import reqt.*
 

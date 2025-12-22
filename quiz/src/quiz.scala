@@ -1,7 +1,7 @@
 //> using scala 3.6.4
 //> using platform scala-js
 //> using packaging.output quiz/quiz.js
-//> using dep org.scala-js::scalajs-dom::2.8.0
+//> using dep org.scala-js::scalajs-dom::2.8.1
 
 // when developing in vscode, open the quiz folder as project root
 // command to package with force overwrite of quiz.js and watch: 

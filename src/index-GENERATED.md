@@ -16,7 +16,7 @@ Used at Lund University in [this course](https://cs.lth.se/krav).
 ## Download
 
 Latest version: <b>
-4.6.2
+4.6.3
 </b> &emsp; All versions: &nbsp; [reqT](https://github.com/reqT/reqT/releases) &nbsp; [reqT-lang](https://github.com/reqT/reqT-lang/releases)
 
 
@@ -82,8 +82,8 @@ Model(
 * You can use reqT as a library in Scala programs for specification analysis and automation. Download example below here: [`hello-reqt.scala`](https://github.com/reqT/reqT.github.io/blob/master/src/hello-reqt.scala) and run in terminal using: <br> `scala run hello-reqt.scala`  
 
 ```scala
-//> using scala 3.6.3
-//> using dep "reqt:reqt:4.4.1,url=https://github.com/reqT/reqT/releases/download/v4.4.1/reqT-4.4.1.jar"
+//> using scala 3.6.4
+//> using dep "reqt:reqt:4.6.3,url=https://github.com/reqT/reqT/releases/download/v4.6.3/reqT-4.6.3.jar"
 
 import reqt.*
 

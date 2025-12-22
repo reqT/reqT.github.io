@@ -1,4 +1,4 @@
-//> using scala 3.6.3
+//> using scala 3.6.4
 //> using toolkit 0.7.0
 
 //  run with: scala run build.scala
