@@ -1,6 +1,8 @@
 ## What is reqT?
 
-**reqT** is an open source requirements engineering tool for software developers and learners, available as a desktop application and a Scala library.  With reqT you can specify requirements using a flexible requirements modelling language called **reqT-lang** with essential requirements engineering concepts, giving structure to natural language requirements, while enabling analysis, visualization and automation. 
+**reqT** is a *flexible* and *scalable* open source **requirements engineering tool** for software developers and learners, available as a desktop application and a Scala library.  
+
+With reqT you can specify requirements using a simple requirements modelling language called **reqT-lang** with essential requirements engineering concepts, giving structure to natural language requirements, while enabling analysis, visualization and automation. 
 
 The reqT-lang syntax is a small subset of [Markdown](https://en.wikipedia.org/wiki/Markdown) using bullet lists with indentation and special keywords, to express textual requirements models by connecting <span class="EntType">*entities*</span> via <span class="RelType">*relations*</span> to <span class="StrAttrType">*attributes*</span>, as in this example:
 
@@ -9,7 +11,7 @@ The reqT-lang syntax is a small subset of [Markdown](https://en.wikipedia.org/wi
   * <span class="StrAttrType">Why</span>: First step to get started.
 </code></pre>
 
-Visit the <a href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf">**Quickref**</a> to explore requirements engineering concepts of reqT.
+Visit the <a href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf">**Quickref**</a> to explore requirements engineering concepts in reqT-lang.
 
 Maintainer of reqT: [Prof. Björn Regnell](https://cs.lth.se/bjorn-regnell). 
 Used at Lund University in [this course](https://cs.lth.se/krav). 
