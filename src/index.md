@@ -90,10 +90,11 @@ Model(
 With reqT you can...
 
 1. Model, analyse, visualize and prioritize requirements.
+1. Manage requirements in issues and git using simple markdown syntax.
 1. Combine natural language with formal structure.
 1. Flexibly mix abstraction levels and modelling approaches.
 1. Integrate requirements and test specification.
-1. Export and import models via open formats.
+1. Export, import and visualize requirements via open formats.
 1. Manipulate models with expressive, safe and convenient Scala programs.
 1. Allocate requirements to releases with constraint solving.
 1. Express prompts for spec-driven development with generative AI .
