@@ -89,7 +89,7 @@ With reqT you can...
 * The main window of the reqT desktop app has menus and three panes as shown in the image below: 
 <img src="img/screen1.png" alt="reqT Main Window" width="100%"/>
   
-  1. The left pane is called the **Tree** where your reqT model is shown as a hierarchy of (un)foldable and selectable nodes. The model is updated by the *Tree* menu. If you want to edit a selected Tree node then select *Tree -> Edit Selected Node in Editor (Ctrl+E)*. The Tree is not updated until you explicitly issue an update, for example using *Tree -> Replace Selected Node from Editor (Ctrl+R)*
+  1. The left pane is called the **Tree** where your reqT model is shown as a hierarchy of (un)foldable and selectable nodes. The model is updated by the *Tree* menu. If you want to edit a selected Tree node then select *Tree -> Edit Selected Node in Editor (Ctrl+E)*. The Tree is not updated until you explicitly issue an update, for example using *Tree -> Replace Selected Node from Editor (Ctrl+R)*.
   
   2. The middle pane is a text **Editor** with reqT-lang syntax highlighting and completion using *Ctrl+Space*. It can be manipulated using the *Editor* menu. Editing of model fragments is *independent* of the Tree pane. You can copy your edits into the Tree *explicitly* by using the *Tree* menu or the shortcuts shown in that menu.   
   
