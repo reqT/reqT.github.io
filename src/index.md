@@ -76,6 +76,8 @@ With reqT you can...
 
 * Visit the reqT [**Quickref**](https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf) to learn about the concepts in reqT-lang.
 
+* Do the [**reqT Quiz**](quiz) to check your knowledge of requirements modelling concepts. 
+
 * Do the **reqT labs** to learn about using reqT in Requirements Engineering:
   * [**Lab 1**: Context, Features and Priorities](https://github.com/reqT/reqT/blob/4.x/docs/lab1.md) 
   * [**Lab 2**: Quality Requirements and Release Planning](https://github.com/reqT/reqT/blob/4.x/docs/lab2.md)
