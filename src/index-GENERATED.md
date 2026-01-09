@@ -173,6 +173,6 @@ Welcome to reqT 4.6.3 https://reqT.github.io
 
 ## Publications
 
-* **Towards a Semi-Formal, Open and Scalable Requirements Modeling Tool** [download pdf](pub/reqT-REFSQ2013-paper.pdf) published at [REFSQ3013](http://refsq.org/2013).
+* **Towards a Semi-Formal, Open and Scalable Requirements Modeling Tool** [download pdf](pub/reqT-REFSQ2013-paper.pdf) published at [REFSQ2013](http://refsq.org/2013).
 
 * **reqT.org – A Scala DSL for Constraint-based Requirement Engineering using JaCoP** [download pdf](pub/reqT-sweconsnet2013.pdf) presented at [SweConsNet Workshop 2013](https://www.lth.se/index.php?id=70383).
