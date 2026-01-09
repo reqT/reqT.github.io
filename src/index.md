@@ -1,13 +1,17 @@
-**reqT** is an open source requirements engineering tool for software developers based on **reqT-lang**, a flexible requirements modelling language with essential requirements engineering concepts, giving structure to natural language requirements, while enabling analysis, visualization and automation. 
+## What is reqT?
 
-The **reqT-lang syntax** is a subset of Markdown using bullet lists with indentation and special keywords to express textual requirements models by connecting *entities*, such as a <span class="EntType">Feature</span>, with *relations*, such as <span class="RelType">has</span>, to *attributes*, such as <span class="StrAttrType">Spec</span>, as in the example below:
+**reqT** is a *flexible* and *scalable* open source **requirements engineering tool** for software developers and learners, available as a desktop application and a Scala library.  
+
+With reqT you can specify requirements using a simple requirements modelling language called **reqT-lang** with essential requirements engineering concepts, giving structure to natural language requirements, while enabling analysis, visualization and automation. 
+
+The reqT-lang syntax is a small subset of [Markdown](https://en.wikipedia.org/wiki/Markdown) using bullet lists with indentation and special keywords, to express textual requirements models by connecting <span class="EntType">*entities*</span> via <span class="RelType">*relations*</span> to <span class="StrAttrType">*attributes*</span>, as in this example:
 
 <pre><code>* <span class="EntType">Feature</span>: helloWorld <span class="RelType">has</span> 
   * <span class="StrAttrType">Spec</span>: Print a nice greeting.
   * <span class="StrAttrType">Why</span>: First step to get started.
 </code></pre>
 
-See the <a href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf">**Quickref**</a> to explore reqT keywords covering essential requirements engineering concepts.
+Visit the <a href="https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf">**Quickref**</a> to explore requirements engineering concepts in reqT-lang.
 
 Maintainer of reqT: [Prof. Björn Regnell](https://cs.lth.se/bjorn-regnell). 
 Used at Lund University in [this course](https://cs.lth.se/krav). 
@@ -47,26 +51,22 @@ Latest version: <b>
 
 
 ## Getting started
-* Make sure you have [Java 21](https://adoptium.net/temurin/releases/?package=jdk&version=21) and [Scala 3](https://www.scala-lang.org/download/) installed for your system. Check this in terminal using: </br>`java -version`</br>`scala -version`
+* Make sure you have [Java 21 - LTS](https://adoptium.net/temurin/releases/?package=jdk&version=21) and [Scala 3](https://www.scala-lang.org/download/) installed for your system. Check this in terminal using: </br>`java -version`</br>`scala -version`</br> (If you use later versions than Java 21 - LTS and Scala 3.6.4 you may get some warnings, but things should work fine anyway.)
 
 * Download the [reqT desktop app](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) and run in terminal using: `java -jar reqT.jar` 
 
+* Visit the reqT [Quickref](https://github.com/reqT/reqT-lang/releases/latest/download/reqT-quickref-GENERATED.pdf) to learn about available concepts in reqT-lang.
+
 * Learn more about [using the reqT app](#using-the-reqt-app)
 
-* Start reqT in the [Scala REPL](https://docs.scala-lang.org/scala3/book/taste-repl.html) using: `java -jar reqT.jar repl`
+* Do the reqT labs to learn about using reqT in Requirements Engineering:
+  * [Lab 1: Context, Features and Priorities](https://github.com/reqT/reqT/blob/4.x/docs/lab1.md) 
+  * [Lab 2: Quality Requirements and Release Planning](https://github.com/reqT/reqT/blob/4.x/docs/lab2.md)
+  * Labs are part of this course at Lund University: [ETSN15 Requirements Eng.](https://lunduniversity.github.io/krav/) 
 
-```
-$ java -jar reqT.jar repl
+* Start reqT in the [Scala REPL](https://docs.scala-lang.org/scala3/book/taste-repl.html) using: `java -jar reqT.jar repl` </br> You can create a requirements Model in the scala repl like so:
 
-Welcome to reqT 4.5.6 https://reqT.github.io
-Type 'edit' to open a new reqT window.
-Type ':quit' or press Ctrl+D to exit.
-Re-run with -h for help on main program args
-
-scala repl -S 3.6.4-RC1 --jar reqT.jar -- --repl-init-script "import reqt.*"
-Welcome to Scala 3.6.4-RC1 (17.0.13, Java OpenJDK 64-Bit Server VM).
-Type in expressions for evaluation. Or try :help.
-
+```scala
 scala> val m = "* Feature: helloWorld has Spec: print greeting".toModel
 val m: reqt.Model = 
   Model(Rel(Ent(Feature,helloWorld),Has,
@@ -78,7 +78,8 @@ Model(
 )
 
 ```
-* You can use reqT as a library in Scala programs for specification analysis and automation. Download example below here: [`hello-reqt.scala`](https://github.com/reqT/reqT.github.io/blob/master/src/hello-reqt.scala) and run in terminal using: <br> `scala run hello-reqt.scala`  
+* You can use reqT in Scala programs for automated requirements analysis. 
+  * Download example: [`hello-reqt.scala`](https://github.com/reqT/reqT.github.io/blob/master/src/hello-reqt.scala) and run in terminal using: <br> `scala run hello-reqt.scala`  
 
 ```scala
 %INCLUDE src/hello-reqt.scala
@@ -86,11 +87,23 @@ Model(
 
 ## Why reqT?
 
-* TODO: add rationale for requirements as code from old site here: [reqt.org](https://reqt.org/index.html)
+With reqT you can...
 
-## Using the reqT App
+1. Model, analyse, visualize and prioritize requirements.
+1. Manage requirements in issues and git using simple markdown syntax.
+1. Combine natural language with formal structure.
+1. Flexibly mix abstraction levels and modelling approaches.
+1. Integrate requirements and test specification.
+1. Export, import and visualize requirements via open formats.
+1. Manipulate models with expressive, safe and convenient Scala programs.
+1. Allocate requirements to releases with constraint solving.
+1. Express prompts for spec-driven development with generative AI .
 
-* TODO: more screendumps and explanations
+... using a simple markdown-based language in an open source tool and library.
+
+## Using the reqT desktop app
+
+Download [reqT.jar](https://github.com/reqT/reqT/releases/latest/download/reqT.jar) and start by double-click or open a terminal and navigate to the folder with the downloaded file and type: `java -jar reqT.jar`
 
 ![reqT Main Window](img/screen1.png)
 
