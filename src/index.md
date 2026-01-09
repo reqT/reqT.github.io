@@ -159,10 +159,10 @@ Welcome to reqT 4.6.3 https://reqT.github.io
 
 ## Publications
 
-* **What is essential? – a pilot survey on views about the requirements metamodel of reqT**, Björn Regnell, [download pdf](pub/what-is-essential-REFSQ2016.pdf) published at [REFSQ2016](http://refsq.org/2016).
+* **What is essential? – a pilot survey on views about the requirements metamodel of reqT**, *Björn Regnell*, [download pdf](pub/what-is-essential-REFSQ2016.pdf) published at [REFSQ2016](http://refsq.org/2016).
 
-* **Towards a Semi-Formal, Open and Scalable Requirements Modeling Tool**, Björn Regnell, [download pdf](pub/reqT-REFSQ2013.pdf) published at [REFSQ2013](http://refsq.org/2013).
+* **Towards a Semi-Formal, Open and Scalable Requirements Modeling Tool**, *Björn Regnell*, [download pdf](pub/reqT-REFSQ2013.pdf) published at [REFSQ2013](http://refsq.org/2013).
 
-* **A Scala Embedded DSL for Combinatorial Optimization in Software Requirements Engineering**, Björn Regnell and Krzysztof Kuchcinski, [download pdf](pub/reqT-COSpeL2013.pdf) published at  First Workshop on Domain Specific Languages in Combinatorial Optimization (COSpeL'2013).
+* **A Scala Embedded DSL for Combinatorial Optimization in Software Requirements Engineering**, *Björn Regnell and Krzysztof Kuchcinski*, [download pdf](pub/reqT-COSpeL2013.pdf) published at  First Workshop on Domain Specific Languages in Combinatorial Optimization (COSpeL'2013).
 
-* **A Scala DSL for Constraint-based Requirement Engineering using JaCoP**, [download pdf](pub/reqT-sweconsnet2013.pdf) presented at [SweConsNet Workshop 2013](https://www.lth.se/index.php?id=70383).
+* **A Scala DSL for Constraint-based Requirement Engineering using JaCoP**, *Björn Regnell*, [download pdf](pub/reqT-sweconsnet2013.pdf) presented at [SweConsNet Workshop 2013](https://www.lth.se/index.php?id=70383).
